@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>G635LX · 225W 复试结果</title>
+<style>body{margin:0;background:#eef2f5;color:#192c3d;font:16px/1.8 "Microsoft YaHei","Segoe UI",sans-serif}main{max-width:960px;margin:28px auto;padding:32px 40px;background:#fff;border-radius:12px}h1{font-size:28px;line-height:1.4}h2{font-size:21px;margin-top:30px}.notice{padding:16px 20px;background:#fff4df;border-left:4px solid #b37a19}.meta{font-size:13px;color:#536475}a{color:#096781;overflow-wrap:anywhere}table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:11px;border:1px solid #d5dfe7;text-align:left;vertical-align:top}th{background:#f0f5f7}.scroll{overflow:auto}code{overflow-wrap:anywhere}@media(max-width:700px){main{margin:0;padding:22px 16px;border-radius:0}h1{font-size:24px}}</style></head>
+<body><main>
+<div class="notice"><strong>最新：225W驱动上限已验证生效，但175W基线结束时CPU102°C触发守卫，未开展225W负载测试。</strong>实验覆盖值已删除，当前175W，正在正常重启完成恢复。<a href="ROG_G635LX_225W新方案执行记录.html">查看最新结果与证据</a>。下文为历史记录。</div>
+<p class="meta">本机：ASUS G635LX / RTX 5090 Laptop · NVIDIA 616.92 · 记录日期：2026-10-19，北京时间</p>
+<h1>复试未通过驱动加载检查，GPU 仍为 175W</h1>
+<div class="notice"><strong>22:45 最新执行结果：</strong>按用户“直接写入并进行压力测试”的要求，通过 NVIDIA 标准接口实际提交了 <code>nvidia-smi -i 0 -pl 225 -sc 0</code>。接口返回“Changing power management limit is not supported in current scope”，即时与最终读取上限均为 175W。退出码 0 不能解释为设置成功。随后提交的 175W 恢复请求也返回不支持；实际状态从未变化，因此不能声称完成了超规格回退验证。未启动压力测试，因为 225W 未生效。<a href="power225-attempt/standard-api-225-20261019-224529.json">查看完整请求、响应及读回记录</a>。</div>
+<div class="notice"><strong>没有完成 180W 或 225W 解锁。</strong>22:37:48–49 的复试再次返回 Windows 错误 577，实验驱动没有加载。临时服务已删除；未发送功耗 IOCTL、未运行高负载测试、未修改固件。此结果只证明当前软件与安全配置下的加载失败，不能证明硬件支持或不支持 225W。</div>
+
+<h2>重启与复试的实际结果</h2>
+<p>用户确认第一次重启未选择 7，随后再次进入高级启动，并回复“已完成”。系统本次启动时间为 22:32:48。没有观测到启动菜单中的实际按键，因此不根据回复推断安全策略一定发生了变化；以下以进入 Windows 后读取的实际状态为准。</p>
+<div class="scroll"><table><thead><tr><th>操作</th><th>预期效果</th><th>实际结果</th><th>恢复 / 清理</th></tr></thead><tbody>
+<tr><td>进入高级启动</td><td>由用户选择仅本次启动的签名检查选项</td><td>已完成系统重启；当前安全策略仍拒绝此测试签名驱动</td><td>单次启动选项随下一次正常重启撤销；没有设置持久 TESTSIGNING 或禁用完整性检查</td></tr>
+<tr><td>核对旧版驱动文件</td><td>确保试用的文件与此前记录相同</td><td>Nvpwr.sys SHA-256 与预先固定的值一致；这不等于微软认可其签名或证明其安全</td><td>不导入证书，不修改信任库</td></tr>
+<tr><td>创建按需启动服务并尝试加载</td><td>仅确定能否加载，不调用功耗接口</td><td>服务创建成功；启动返回 577：Windows 无法验证数字签名。CodeIntegrity 事件 3004 指向该 Nvpwr.sys</td><td>停止命令返回“未启动”，删除服务成功；再次枚举未发现实验服务</td></tr>
+<tr><td>读取 GPU 功耗策略</td><td>确认操作前后保持原设置</td><td>前后 Current Power Limit 与 Max Power Limit 均为 175W</td><td>没有发生功耗写入，无需执行功耗回滚；不能将此称为已验证 225W 的回退</td></tr>
+<tr><td>22:45 标准 NVIDIA 接口请求 225W</td><td>尝试通过驱动正常校验后的接口设置目标，再读取确认</td><td>明确返回当前范围不支持；前后均为 175W，225W 未生效。请求前 GPU 利用率 2%、温度 49°C</td><td>紧接着请求恢复 175W，但接口同样不支持；最终读取仍为原始 175W，没有加载实验驱动或启动负载</td></tr>
+<tr><td>查询本次探测窗口的系统事件</td><td>查找新增显示驱动、WHEA 或崩溃记录</td><td>查询窗口内未发现相应警告或错误；本轮没有性能得分和 FPS 测试</td><td>短时空闲检查不能证明长期稳定性</td></tr>
+</tbody></table></div>
+
+<h2>当前拦截原因</h2>
+<p>22:39:37 的只读 <code>NtQuerySystemInformation(SystemCodeIntegrityInformation)</code> 查询成功，返回 <code>0xF405</code>：内核代码完整性强制校验开启、测试签名不被接受、HVCI 内核校验及严格模式开启。Secure Boot 也保持开启。字段定义见 <a href="https://learn.microsoft.com/en-us/windows/win32/api/winternl/nf-winternl-ntquerysysteminformation">微软 API 文档</a>。</p>
+<p>事件 3004 表明 Windows 无法按当前信任与完整性规则验证此文件，并提到找不到对应文件哈希。该事件不能单独证明文件是恶意软件，也不能区分 Secure Boot、HVCI 和签名信任链各自的贡献。可以确定的是：本轮重启之后，旧版驱动仍未获准加载。没有进一步关闭 Secure Boot、内存完整性或导入其测试证书。</p>
+
+<h2>225W 与性能收益的结论</h2>
+<p>本机官方设计上限为 175W（150W + 25W Dynamic Boost），225W 超出该规格。此次失败发生在驱动加载阶段，并未测到 225W，更没有证明它能够持续运行、提升帧率或可靠恢复。此前 NVIDIA 普通功耗接口的 180W 请求也明确返回不支持，读取上限保持 175W。<a href="https://rog.asus.com/laptops/rog-strix/rog-strix-scar-16-2025/spec/">ASUS 规格</a></p>
+<p>目前不具备满足“长期稳定、留好后路”的 225W 实施条件。已有公开软件的恢复可靠性与本机兼容性缺口，以及原设置测试中 CPU 温度瞬时达到 101–104°C 的记录，仍未消除。应先交叉验证温度与散热，再考虑额定功耗内的电压／频率曲线调校。此前额外核心 +30MHz 的短时 GPU 测试平均收益约 0.89%，不足以证明长期稳定，已恢复；不能据此承诺新的调校收益。</p>
+<p>如评估其他软件，应先取得可核验来源、兼容本机的版本及恢复机制证据。当前作者的新版本与本次旧版不是同一实现；本轮没有购买或执行它。历史方案和来源见 <a href="ROG_G635LX_225W非官方方案核查.html">非官方方案核查报告</a>。</p>
+
+<h2>当前恢复状态与证据</h2>
+<p>GPU 上限保持 175W，实验服务为零，无实验自动启动项。本轮没有改动 Afterburner 曲线，也没有启动 Afterburner 或基准测试。当前安全状态仍处于强制校验；如要明确撤销本次选择过的临时启动选项，保存工作后正常重新启动 Windows 一次即可，无需再次进入高级启动。<a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/install/test-signing">微软单次启动说明</a></p>
+<ul>
+<li><a href="power225-attempt/driver-load-probe-20261019-223748.json">本次加载、清理与功耗读回原始记录</a></li>
+<li><a href="power225-attempt/code-integrity-after-retry.json">CodeIntegrity 拦截事件</a>；<a href="power225-attempt/code-integrity-state-after-retry.json">当前完整性策略查询结果</a></li>
+<li><a href="power225-attempt/gpu-errors-after-retry.json">探测后的 GPU / 系统错误查询</a></li>
+<li><a href="225W尝试准备_配置备份.zip">原配置备份</a>；<a href="225W复试证据_20261019.zip">复试证据包</a></li>
+</ul>
+<p class="meta">配置备份有助于恢复软件设置，不能防止或修复过压、过流、过热等造成的物理损伤。本次没有使用上述供电修改。</p>
+</main></body></html>
+
+

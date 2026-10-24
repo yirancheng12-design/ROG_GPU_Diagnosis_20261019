@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ROG G635LX 降压超频执行报告</title>
+<style>body{margin:0;background:#10151d;color:#e6edf5;font:16px/1.8 "Segoe UI","Microsoft YaHei",sans-serif}main{max-width:1080px;margin:auto;padding:44px 28px 70px}h1{font-size:32px;line-height:1.4;margin:8px 0 16px}h2{font-size:23px;margin:36px 0 12px;color:#fff}h3{font-size:18px;color:#c7dcf5}p{margin:10px 0}.meta,.muted{color:#aab8ca}.status{padding:22px 25px;border:1px solid #b98d44;border-left:5px solid #f1bd65;background:#29251d;border-radius:10px}.status strong{color:#ffd78b}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0}.card{padding:18px;border:1px solid #354253;border-radius:10px;background:#19212c}.number{display:block;font-size:28px;font-weight:700;color:#99d6ff}.good{color:#96e3b1}table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px}th,td{text-align:left;vertical-align:top;padding:12px;border-bottom:1px solid #364354}th{background:#202c3a;color:#c4dcf7}code{background:#263244;padding:2px 5px;border-radius:4px;overflow-wrap:anywhere}a{color:#8cd1ff}li{margin:7px 0}.note{padding:14px 18px;border-left:3px solid #6783a6;background:#18212e}.scroll{overflow-x:auto}.timeline{border-left:2px solid #50637b;padding-left:20px}.timeline p{margin:12px 0}.foot{font-size:13px;color:#aab8ca;border-top:1px solid #354253;margin-top:32px;padding-top:18px}@media(max-width:700px){main{padding:24px 16px}.grid{grid-template-columns:1fr}h1{font-size:26px}table{min-width:650px}}@media print{body{background:white;color:#172334}main{max-width:none;padding:12px}.status,.card,th,.note{background:#f4f6f9;color:#172334}h1,h2,h3,.number,.status strong,.good{color:#172334}a{color:#244b77}.grid{break-inside:avoid}tr{break-inside:avoid}}</style></head>
+<body><main>
+<div class="meta">2026 年 10 月 19 日 · Windows 实机执行 · ROG 枪神 9 超竞版 / G635LX</div>
+<h1>降压超频执行报告</h1>
+<div class="status"><strong>结论：已完成安装、备份、监测与回退验证；未应用额外降压或超频。</strong><p>在原始频率下，CPU 两轮都出现了 104°C 瞬时读数。第二轮触发收紧后的 100°C 停测阈值，程序已结束测试并恢复原设置。GPU 本身最高 76°C，没有观察到 GPU 热保护触发。当前缺少足够可靠的整机温度余量，不能交付“已验证稳定”的调校配置。</p></div>
+<div class="grid"><div class="card"><span class="number">175W</span>保留官方 GPU 功耗上限</div><div class="card"><span class="number">+50 / +100 MHz</span>恢复原有核心 / 显存偏移</div><div class="card"><span class="number">0 项额外调校</span>无自定义曲线、无启动自动应用</div></div>
+<p>你已确认使用原装方口 380W（20V⎓19A）适配器，电脑置于支架或散热底座，进出风无遮挡。旧超频已经恢复，原先游戏稳定。以上为用户提供的条件，本次未把它们当作新的稳定性测试结果。</p>
+
+<h2>硬件与原始设置</h2>
+<div class="scroll"><table><tr><th>项目</th><th>识别 / 核实结果</th></tr>
+<tr><td>设备</td><td>ASUS G635LX；RTX 5090 Laptop GPU 24GB；Core Ultra 9 275HX；32GB 内存</td></tr>
+<tr><td>版本</td><td>BIOS G635LX.338；VBIOS 98.03.5c.00.6f；NVIDIA 616.92；Windows 11 家庭版中文版 26200</td></tr>
+<tr><td>工作模式</td><td>原有 Armoury Crate 增强 / Turbo、独显 Ultimate；Windows Turbo 电源方案保持不变</td></tr>
+<tr><td>实际原始偏移</td><td>Afterburner 官方 SDK 读回：核心 +50MHz、显存 +100MHz；自定义 V/F 曲线未启用、节点未锁定。它们是本次开始前的基线，不是本次新增超频。</td></tr>
+<tr><td>供电状态</td><td>测试中检查 AC 在线；结束时电池放电率为 0、剩余容量 87092mWh。额定适配器瓦数由用户确认，软件不能据此证明 GPU 供电可提高到 225W。</td></tr>
+<tr><td>工具</td><td>MSI Afterburner 4.6.6 / Build 16757，安装于 D:\msi\MSI Afterburner。安装包哈希匹配 Microsoft WinGet 清单；安装包及程序 MSI 数字签名有效。</td></tr></table></div>
+<p>Afterburner 支持读取这块 GPU 的 127 个 V/F 节点。没有把界面偏移 0、GPU 空闲功耗、NVML 默认功耗字段或不支持的 SDK 字段解释为机器的实际持续 TGP。</p>
+
+<h2>实测结果与有效性</h2>
+<p>游戏为《赛博朋克 2077》2.31，内置 benchmark；2560×1600、DLSS Quality / Transformer、高纹理、路径追踪和光线重建开启、帧生成关闭。常规 Ray Tracing 字段为 false、Path Tracing 字段为 true，保留这两个原始字段，不能将测试称为纯光栅场景。</p>
+<div class="scroll"><table><tr><th>轮次</th><th>成绩</th><th>功耗 / 温度</th><th>结论</th></tr>
+<tr><td>19:28 初步基线<br>临时限帧 240</td><td>平均 36.0848 FPS<br>1% Low 32.279 FPS<br>64.21 秒 / 2317 帧</td><td>稳定负载窗口 GPU 平均 165.62W、2104.71MHz；最高 74°C；CPU 无连续记录</td><td>可用作初步 GPU 表现记录，不能单独证明整机温度与长期稳定性。</td></tr>
+<tr><td>20:12 自动基线<br>临时限帧 120</td><td>平均 29.6961 FPS<br>1% Low 8.9895 FPS<br>68.90 秒 / 2046 帧</td><td>GPU 上限部分时间为 55W，唤醒后回到约 175W；CPU 峰值 104°C；GPU 最高 74°C</td><td><strong>排除出性能对比。</strong>系统待机干扰，运行条件不合格。</td></tr>
+<tr><td>20:15 保持唤醒基线<br>临时限帧 120</td><td>未完成；无有效得分</td><td>有效上限 169.85–175W，未再出现 55W；GPU 最高 76°C；CPU 再次 104°C</td><td><strong>触发温度停测并自动回退。</strong>未继续追加超频测试。</td></tr></table></div>
+<p class="note">没有调校后的完整结果，因此本次可验证的降压 / 超频性能收益为“尚无证据”，不能写成提升了某个百分比。两轮不同条件的基线不能作为修改前后的 A/B 对照，更不能把排除待机干扰带来的恢复算作超频收益。</p>
+<p>1% Low 的计算口径为：逐帧文件中最慢 1% 帧（数量向上取整）的平均帧时间取倒数，不等同于游戏显示的最低 FPS。GPU 遥测约每秒一次，和逐帧数据只能近似对时；原生得分、帧时间和完整采样均已保存。</p>
+
+<h2>两个独立发现</h2>
+<h3>1. 55W 限制与新式待机时段重合</h3>
+<div class="timeline"><p><strong>20:09:30</strong>　Kernel-Power 506：因 Idle Timeout 进入新式待机。</p><p><strong>20:12:06–20:12:58</strong>　监测到有效 GPU 功耗上限 55W；负载阶段核心约 577–667MHz。</p><p><strong>20:12:58</strong>　Kernel-Power 507：因键盘输入退出新式待机。</p><p><strong>20:12:59</strong>　下一次采样上限回到 172.52W，随后恢复到接近 175W。</p></div>
+<p>时间对应关系强烈支持系统待机状态导致这一段功耗受限。尚不能由此宣称已完整定位驱动或固件内部机制。第二轮使用 Windows 官方 <code>SetThreadExecutionState</code> 在测试期间请求保持系统与显示唤醒，没有改写长期电源计划；测试结束时释放请求。第二轮未再出现 55W 上限。</p>
+<h3>2. CPU 温度余量不足以继续稳妥调校</h3>
+<p>两次 104°C 分别出现在 <strong>20:13:22.567</strong> 和 <strong>20:16:56.502</strong>。第二次同一采样 GPU 为 76°C、170.78W，CPU 封装功耗读数约 44.86W。CPU 功率和温度采样并非严格同步，秒级功率不能排除更短的睿频峰值，也不能据此直接认定散热器故障。</p>
+<p>Intel 对 275HX 标注的最高工作温度为 <a href="https://www.intel.com/content/www/us/en/products/sku/242293/intel-core-ultra-9-processor-275hx-36m-cache-up-to-5-40-ghz/specifications.html">105°C</a>。104°C 尚不足以证明硬件损坏或持续热降频；这里的停测是基于你优先长期稳定性的要求采取的保守决策。尚未独立记录 CPU 热节流标志，也没有连续 GPU 电压日志，不作超出这些证据的判断。</p>
+<p>停测后的 15 点轻负载观察：CPU 封装 62–97°C、平均 71.87°C；CPU 功率平均 11.23W；GPU 50°C。温度峰值随轻负载仍会波动，因此不把它简化为“持续 104°C”。需要用独立工具交叉核实 CPU 封装、各核心峰值、热节流标志与风扇转速。</p>
+
+<h2>已执行操作、效果与恢复</h2>
+<div class="scroll"><table><tr><th>操作</th><th>目的 / 实际结果</th><th>恢复状态或方法</th></tr>
+<tr><td>安装 Afterburner 4.6.6</td><td>用户已授权；已安装并读取官方 SDK 接口。减少鼠标接管，避免再次干扰指针。</td><td>保留安装；无需卸载即可维持原设置。若不需要，可通过 Windows 已安装应用卸载；配套 RTSS 如已安装可单独卸载。</td></tr>
+<tr><td>备份配置、127 点曲线与原始共享内存</td><td>保存核心 +50、显存 +100、曲线未启用状态及游戏原始配置；建立可核验的恢复目标。</td><td>数据位于 tuning/afterburner-original。原始二进制仅作证据，不能作为 VBIOS 或通用恢复文件刷入硬件。</td></tr>
+<tr><td>通过官方 SDK 重新应用原始偏移</td><td>验证恢复通道，后续停测时再次使用；没有提交任何额外超频或降压候选值。</td><td>最终核心 +50、显存 +100；127 点偏移与原始一致、差异 0，曲线未启用、锁定索引 0。</td></tr>
+<tr><td>临时关闭帧生成、设置测试限帧</td><td>测量实际渲染性能，并减少菜单无上限渲染。未加载存档或操作游戏进度。</td><td>每轮结束后完整恢复 UserSettings.json，SHA-256 与原备份一致；原有帧生成和限帧设置已恢复。</td></tr>
+<tr><td>启动温度 / 供电 / 错误监测</td><td>检查 GPU 温度与保护状态、CPU 温度、AC、遥测有效性及相关 System 错误。CPU 再次 104°C 后停止本次启动的游戏。</td><td>测试进程已关闭。测试结束后无残留监测会话或保持唤醒请求；原 Windows 电源计划不变。</td></tr>
+<tr><td>临时阻止自动待机</td><td>排除待机干扰；第二轮 GPU 上限保持 169.85–175W，但 CPU 温度条件仍未通过。</td><td>请求在 finally 中释放，未改写熄屏 / 休眠超时。</td></tr></table></div>
+<p class="good">最终核验：游戏未运行；原始游戏配置哈希一致；新 GPU / Display / WHEA 相关事件为 0（检查窗口 19:45–20:20）；未启用开机自动应用、恒定电压或解锁电压控制；BIOS、VBIOS、驱动及硬件保护均未修改。</p>
+<p>游戏原设置 SHA-256：<code>FDE88E654A0EF4A58D308371CC68B0AC5BF759267BEEC2675D7C2F40F76E8C76</code>。恢复备份为 <code>tuning/Cyberpunk-UserSettings-before.json</code>。如以后需要恢复该文件，应先退出游戏，再覆盖 <code>%LOCALAPPDATA%\CD Projekt Red\Cyberpunk 2077\UserSettings.json</code>。当前已经恢复，无需重复操作。</p>
+
+<h2>后续可执行方案与收益边界</h2>
+<div class="scroll"><table><tr><th>优先顺序 / 方案</th><th>预期效果</th><th>代价与风险</th><th>恢复方法</th></tr>
+<tr><td>1. 先核实 CPU 热状态与风扇工作</td><td>明确 104°C 是真实核心热点、睿频瞬态还是监测差异；得到可靠基线。你已确认通风无遮挡，不重复把摆放当作已知原因。</td><td>只读监测风险低；不能直接承诺 FPS 收益。若多个工具均确认反复接近 105°C，应联系 ASUS 检查风扇、散热接触和固件策略，不自行拆液金散热模组。</td><td>只读工具退出即可；不改硬件。</td></tr>
+<tr><td>2. 官方模式内优化 CPU/GPU 功耗分配</td><td>在 Armoury Crate 实际允许的范围内，逐档降低 CPU 睿频功耗、保持 GPU 官方上限，并核实风扇响应。GPU 受限游戏可能更平稳。</td><td>本次未执行；CPU 受限游戏可能掉帧。不存在可直接通用的“45W / 65W 必稳”参数，须从当前值小步调整并复测。</td><td>保存现有界面与设置后再改；切回原 Turbo 配置，核对 +50 / +100 偏移。</td></tr>
+<tr><td>3. 温度条件通过后调 GPU V/F 曲线</td><td>目标是在同一 175W 包络内提高有效频率或降低功耗；保留动态降频。初期一次只调整一个变量，显存保持原值。</td><td>实际收益未知，可能为零，也可能损失轻负载峰值性能；过低电压或过高频率会造成报错、花屏或驱动重置。未找到并验证本机可交付电压点。</td><td>应用已备份的原始曲线 / 偏移；验证曲线未启用、+50 / +100、无启动自动应用。Afterburner 默认 Reset 可能为 0 / 0，不能自动等同于本次原始基线。</td></tr>
+<tr><td>4. 显存与 CPU 降压分别评估</td><td>在前三项完成后才有条件判断额外收益。</td><td>本次未测试；显存错误可能表现为性能下降而非立即崩溃。CPU 降压支持性与保护策略尚未核实，不能为此绕过保护或修改底层固件。</td><td>分别保存和恢复原始设置，不同时叠加多个调校变量。</td></tr>
+<tr><td>225W GPU 目标</td><td>没有可交付的官方方案。</td><td>G635LX 官方规格仍为 150W + 25W Dynamic Boost，最高 175W；380W 适配器并不赋予 GPU 225W 持续供电能力。超出规格的刷写或绕过不在本次执行范围。</td><td>继续保留官方限制。</td></tr></table></div>
+<p>恢复调校测试的前提：无待机干扰、温度与风扇监测可信，原设置能完整通过重复测试。之后才进行至少三轮同条件前后对比，记录帧时间、功耗、频率和温度，再覆盖更长负载及轻重负载切换；短期通过也不能证明长期绝对稳定。</p>
+
+<h2>原始数据与来源</h2>
+<ul><li><a href="tuning/execution-status.json">最终恢复核验</a>；<a href="tuning/afterburner-original/control-initial.json">调校前控制参数与曲线</a>；<a href="tuning/final-control.json">结束时控制参数</a></li>
+<li><a href="tuning/benchmark_2026-10-19_19-28-16/summary.json">初步基线原生结果</a>；<a href="tuning/baseline-summary.json">初步 GPU 稳态遥测统计</a></li>
+<li><a href="tuning/baseline-auto-1/analysis.json">受待机影响的基线统计（排除）</a>；<a href="tuning/baseline-auto-1/standby-events.json">待机 / 唤醒事件</a>；<a href="tuning/baseline-auto-1/telemetry.csv">完整采样</a></li>
+<li><a href="tuning/baseline-awake-1/session.json">自动温度停测记录</a>；<a href="tuning/baseline-awake-1/telemetry.csv">第二轮完整采样</a>；<a href="tuning/baseline-awake-1/gpu-restore.json">回退与读回记录</a>；<a href="tuning/post-stop-idle.csv">停测后轻负载观察</a></li>
+<li><a href="https://rog.asus.com/laptops/rog-strix/rog-strix-scar-16-2025/spec/">ASUS G635LX 官方规格</a>；<a href="https://www.intel.com/content/www/us/en/products/sku/242293/intel-core-ultra-9-processor-275hx-36m-cache-up-to-5-40-ghz/specifications.html">Intel 275HX 规格</a>；<a href="https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-setthreadexecutionstate">Microsoft 临时保持唤醒 API</a>；<a href="https://www.msi.com/blog/msi-afterburner-overclocking-undervolting-guide">MSI 调校说明</a></li>
+<li>控制接口依据：随本机 Afterburner 安装的 SDK/Include/MACMSharedMemory.h、MAHMSharedMemory.h 及 SDK 官方样例。只调用文档化共享内存的标准时钟 / 曲线恢复接口，未调用寄存器、I²C、固件写入或保护绕过。</li></ul>
+<p class="foot">本报告补充先前的 GPU 功耗诊断。原诊断文件保持不变。所有“恢复一致”判断均来自读回或文件哈希；所有收益判断以实际结果为限，没有将计划中的调校写成已执行。</p>
+</main></body></html>
