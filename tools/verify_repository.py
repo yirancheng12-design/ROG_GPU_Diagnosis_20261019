@@ -67,7 +67,9 @@ def verify_evidence(root: Path, manifest: dict) -> list[str]:
 
 def verify_markdown(root: Path) -> list[str]:
     errors = []
-    docs = [root / 'README.md', root / 'CONTRIBUTING.md'] + sorted((root / 'docs/en').glob('*.md'))
+    docs = [root / 'README.md', root / 'CONTRIBUTING.md']
+    docs += [root / name for name in ('README.zh-CN.md', 'CHANGELOG.md') if (root / name).is_file()]
+    docs += sorted((root / 'docs/en').glob('*.md'))
     for path in docs:
         if not path.is_file():
             errors.append(f'Missing maintained document: {path.relative_to(root)}')

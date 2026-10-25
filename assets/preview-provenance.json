@@ -1,0 +1,17 @@
+{
+  "archive": "ROG_G635LX_调校证据.zip",
+  "member": "tuning/baseline-auto-1/telemetry.csv",
+  "source_sha256": "23ee0c9635c819cf9dd3a39958e562d9471f8b0601f734cfb3ffd83b5863d0ff",
+  "samples": 107,
+  "sample_span_seconds": 98.627,
+  "image_size": [
+    1280,
+    640
+  ],
+  "plot": "Individual recorded samples; no interpolation",
+  "generator": "tools/render_preview.py",
+  "artifacts": {
+    "telemetry-preview.png": "8bcb078d8058413327c09bab760d4a3de31d901f4e394b29dbab7fe18d33a990",
+    "telemetry-preview.svg": "f94d28ba53ac98df7f9d99df5882a5423ac8223df1afdcd7de9ed75fed95dd52"
+  }
+}
