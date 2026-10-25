@@ -12,6 +12,13 @@ The first case is an **ASUS ROG Strix SCAR 16 G635LX / RTX 5090 Laptop GPU**, re
 
 The preview uses the original 107-sample CSV. [Source and chart provenance](assets/preview-provenance.json) are included.
 
+## Try the public release
+
+[Release / 下载](https://github.com/yirancheng12-design/laptop-gpu-diagnostics/releases/latest) · [演示与试用 / Evidence and trial](docs/en/github-release-guide.md)
+
+Download the complete source ZIP, follow the installation prerequisites, and inspect the evidence before reporting a result.
+
+
 ## One-click installation (Windows)
 
 With Python 3.11+ installed, extract the whole repository and double-click [Install.cmd](Install.cmd). It creates `.venv` and verifies the bundled archive/tools without package downloads. Then double-click [Run.cmd](Run.cmd) to display the recorded-data summary. It does not install drivers, game mods or runtime DLLs. See [installation details and recovery](INSTALL.md).
