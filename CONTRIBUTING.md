@@ -27,6 +27,10 @@ Document missing artifacts instead of fabricating a link or silently deleting a 
 
 ## Checks
 
+For a new case, use the [diagnostic checklist](docs/en/diagnostic-workflow.md), [blank telemetry template](docs/en/telemetry-template.csv), and GitHub measurement issue form. The short [55W case](docs/en/case-55w.md) and [225W evidence case](docs/en/case-225w.md) are editorial introductions derived from the detailed English reports and packaged records; they are not new experiments.
+
+`tools/summarize_telemetry.py` analyzes recorded CSVs only. Keep raw input data and the normalization method. Limit segments describe recorded samples, not continuously verified operation. The tool must not infer causes, FPS gains, or stable hardware settings.
+
 Run from the repository root:
 
 ```console

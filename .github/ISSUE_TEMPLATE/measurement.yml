@@ -1,0 +1,39 @@
+name: GPU measurement or diagnostic case
+description: Share a reproducible observation with clear evidence and limitations.
+title: "[Case] "
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question and observed result
+      description: State one symptom, expected behavior, and what actually happened. Inconclusive results are welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Hardware and environment
+      description: Laptop/GPU, driver/BIOS/OS, OEM profile, GPU mode, AC state, original offsets, cooling conditions, timestamps and timezone.
+    validations:
+      required: true
+  - type: textarea
+    id: workload
+    attributes:
+      label: Workload and measurement method
+      description: Version, settings, duration, monitoring tool/sensor names, repeat count, and any data conversion. Say if no load test was run.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and reproduction
+      description: Relevant sanitized data, hashes, and read-only inspection steps. Distinguish power draw from power limit; do not include credentials or unrelated personal data.
+    validations:
+      required: true
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Excluded runs, unknowns, and restoration
+      description: Note interruptions, gaps, stop conditions, missing evidence, configuration changes, and original-state checks.
+    validations:
+      required: true
