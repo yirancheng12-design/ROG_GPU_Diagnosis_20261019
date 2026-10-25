@@ -1,4 +1,4 @@
-# 笔记本 GPU 功耗与稳定性诊断
+# 笔记本 GPU 诊断：功耗与稳定性
 
 [English](README.md) · [原始中文资料说明](README_225W_整理说明.md)
 
@@ -56,7 +56,7 @@ python -m unittest discover -s tests -v
 
 ## 参与
 
-欢迎提交其他机型的可复现案例、修正解释或补充缺失证据。使用 [案例表单](https://github.com/yirancheng12-design/ROG_GPU_Diagnosis_20261019/issues/new?template=measurement.yml)，记录环境、数据、排除的轮次和未知部分。原始 10 个文件与 228 个 ZIP 成员保持不变。
+欢迎提交其他机型的可复现案例、修正解释或补充缺失证据。使用 [案例表单](https://github.com/yirancheng12-design/laptop-gpu-diagnostics/issues/new?template=measurement.yml)，记录环境、数据、排除的轮次和未知部分。原始 10 个文件与 228 个 ZIP 成员保持不变。
 
 如果这些方法对你有帮助，可以点 Star，方便以后找到项目；也欢迎直接提交有效反馈。
 

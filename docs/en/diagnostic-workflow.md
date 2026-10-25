@@ -72,4 +72,4 @@ The analyzer does not select workload windows or certify a benchmark. The [origi
 4. **Interpretation:** supported findings, alternatives, excluded runs, and missing records.
 5. **Reproduction and restoration:** read-only inspection steps and verified original-state checks.
 
-Open a [measurement issue](https://github.com/yirancheng12-design/ROG_GPU_Diagnosis_20261019/issues/new?template=measurement.yml) or follow the [contribution guide](../../CONTRIBUTING.md). Share relevant sanitized excerpts rather than credentials, serial numbers, or unrelated personal data. Failed and inconclusive experiments are welcome when their limits are clear.
+Open a [measurement issue](https://github.com/yirancheng12-design/laptop-gpu-diagnostics/issues/new?template=measurement.yml) or follow the [contribution guide](../../CONTRIBUTING.md). Share relevant sanitized excerpts rather than credentials, serial numbers, or unrelated personal data. Failed and inconclusive experiments are welcome when their limits are clear.

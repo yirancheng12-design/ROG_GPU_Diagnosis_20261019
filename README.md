@@ -1,6 +1,6 @@
-# Laptop GPU Power & Stability Diagnostics
+# Laptop GPU Diagnostics
 
-[![Verify reports and evidence](https://github.com/yirancheng12-design/ROG_GPU_Diagnosis_20261019/actions/workflows/verify.yml/badge.svg?branch=main)](https://github.com/yirancheng12-design/ROG_GPU_Diagnosis_20261019/actions/workflows/verify.yml)
+[![Verify reports and evidence](https://github.com/yirancheng12-design/laptop-gpu-diagnostics/actions/workflows/verify.yml/badge.svg?branch=main)](https://github.com/yirancheng12-design/laptop-gpu-diagnostics/actions/workflows/verify.yml)
 
 [English](README.md) · [简体中文](README.zh-CN.md)
 
@@ -86,7 +86,7 @@ python -m unittest discover -s tests -v
 
 The standard-library verifier checks **10 preserved original files and 228 ZIP members**, CSV inventories, maintained documentation links, and generated reference coverage. Windows/Linux CI runs the checks. Integrity checks do not establish sensor accuracy or hardware safety.
 
-Have another laptop or a reproducible case? [Submit a measurement](https://github.com/yirancheng12-design/ROG_GPU_Diagnosis_20261019/issues/new?template=measurement.yml), including conditions, data, exclusions, and unknowns. See [Contributing](CONTRIBUTING.md) for evidence and translation rules. No completed matched 175W/225W performance comparison is published here.
+Have another laptop or a reproducible case? [Submit a measurement](https://github.com/yirancheng12-design/laptop-gpu-diagnostics/issues/new?template=measurement.yml), including conditions, data, exclusions, and unknowns. See [Contributing](CONTRIBUTING.md) for evidence and translation rules. No completed matched 175W/225W performance comparison is published here.
 
 If this workflow helps you, consider starring the repository so you can find it again. Useful bug reports, corrections, and comparable measurements are equally welcome.
 
