@@ -1,0 +1,1431 @@
+{
+  "schema_version": 1,
+  "source_commit": "0aeaf8c4f514c36b560d215670eb876be3b9b5d7",
+  "hash_algorithm": "SHA-256",
+  "files": [
+    {
+      "path": "225W尝试准备_备份清单.csv",
+      "bytes": 4016,
+      "sha256": "25e2e78851ab913285d2e9cebf54b138a50753c2e46a06ccca7bfa87ceb64502"
+    },
+    {
+      "path": "225W新路线重启前证据_20261019.zip",
+      "bytes": 1547074,
+      "sha256": "d0cde7af5efa945f8c5a1d86149f10ef162df50e2716469f741bc8640e2c4d85",
+      "members": [
+        {
+          "path": "power225-research-followup/重启续接记录.txt",
+          "bytes": 4139,
+          "crc32": "a82aa580",
+          "sha256": "159730292e336ba2992efda86decfba16d59a368bb31a295ebfe4fe8c9c94992"
+        },
+        {
+          "path": "power225-research-followup/a630-readonly-20261019-232244.bin",
+          "bytes": 1832,
+          "crc32": "520b622d",
+          "sha256": "90cab8c9cdcbb77a96663df1e8a7a99c2219f6c3b58db3ec8d6e5349d92a6fce"
+        },
+        {
+          "path": "power225-research-followup/a630-readonly-20261019-232244.json",
+          "bytes": 492,
+          "crc32": "0cf0533d",
+          "sha256": "23b1d7b9c444628cb1b1ca34f5cd8aa00c953b7af6aaedd8fe67e7adf4675162"
+        },
+        {
+          "path": "power225-research-followup/aio-tree.json",
+          "bytes": 30123,
+          "crc32": "b22697b4",
+          "sha256": "f81177e1721ec578e2d1d043368db2dbb538acf6c0ad81aa88ee04d79aecabb8"
+        },
+        {
+          "path": "power225-research-followup/apply-max225-20261019-234340-live-power.txt",
+          "bytes": 2392,
+          "crc32": "74e6d252",
+          "sha256": "d2e2b1d9482bbdaba7eb67776679e6cdfb0f7ba6c3c280ad523de88e9be0a1ec"
+        },
+        {
+          "path": "power225-research-followup/apply-max225-20261019-234340-plan.json",
+          "bytes": 562,
+          "crc32": "21ead406",
+          "sha256": "80d52cd7ca6bdf79b69a23b1ffa141451d974b1af0b6d59aadfe056a0671cbed"
+        },
+        {
+          "path": "power225-research-followup/apply-max225-20261019-234340-result.json",
+          "bytes": 558,
+          "crc32": "2b9d09f1",
+          "sha256": "43f78cd25616b17bbd2565715be20ec3ca16c1dc655cf8acc9503cd348385d84"
+        },
+        {
+          "path": "power225-research-followup/driver-transport-file-audit.json",
+          "bytes": 652,
+          "crc32": "6ecf5b8b",
+          "sha256": "43a91d4e84045331f3cce44350b9c57d612fbd58cebd67ff33dd231f60710b32"
+        },
+        {
+          "path": "power225-research-followup/existing-gpuz-signature.json",
+          "bytes": 551,
+          "crc32": "13238db5",
+          "sha256": "a664d8450125805ce762397c80afab22cb40857ce466f341bc1209104ed63384"
+        },
+        {
+          "path": "power225-research-followup/GPU-Z-2.70.installer.yaml",
+          "bytes": 784,
+          "crc32": "97e53666",
+          "sha256": "e9274aad2edbb71db173c291ba6e4110280ebf319cc7124f1d33701a968f8706"
+        },
+        {
+          "path": "power225-research-followup/GPU-Z.installer.yaml",
+          "bytes": 784,
+          "crc32": "18d8505a",
+          "sha256": "d2fee3a6b0f280c09f236f1eb761d9a480801a1f8558d370b6b2a95137a9a208"
+        },
+        {
+          "path": "power225-research-followup/gpuz-launch.json",
+          "bytes": 243,
+          "crc32": "ae16f42d",
+          "sha256": "a312536749eb85d0bcf003a8b1a1542c49e85ba2fcf851f9fbf3714d405486fd"
+        },
+        {
+          "path": "power225-research-followup/gpuz-reopened.json",
+          "bytes": 201,
+          "crc32": "0c5e4544",
+          "sha256": "1b6a797b17e496f099f07e0e196a6f09c04d541a2ef99dbc96b9d282cb9cc964"
+        },
+        {
+          "path": "power225-research-followup/latest-checkpoint.json",
+          "bytes": 290,
+          "crc32": "e36ca00b",
+          "sha256": "0f29beac727254f0617c31321f86b97e759a2133ef927a96ed41204c6de7f024"
+        },
+        {
+          "path": "power225-research-followup/latest-power-state.txt",
+          "bytes": 2962,
+          "crc32": "e317af4a",
+          "sha256": "8a8e6f3e159f409f1753707366dbdaf430325b8d6f542bab233320ac46ed1115"
+        },
+        {
+          "path": "power225-research-followup/noop-20261019-232440-after.txt",
+          "bytes": 2392,
+          "crc32": "047c11d7",
+          "sha256": "551f3637aff5dc26456f5417407133a47a9106710b3050ec6114c7c48163a8b4"
+        },
+        {
+          "path": "power225-research-followup/noop-20261019-232440-before.txt",
+          "bytes": 2392,
+          "crc32": "0bdf92a9",
+          "sha256": "2de71a24abfbcf0694999355fff7568733b6f2e4257a544d850ee52934a0377c"
+        },
+        {
+          "path": "power225-research-followup/noop-20261019-232440-result.json",
+          "bytes": 360,
+          "crc32": "a02cee13",
+          "sha256": "b7af6f71387ae8f99ae119fc5ff1cc2ae78fd0ba53bd1bf234f7ed8dac9f0a5e"
+        },
+        {
+          "path": "power225-research-followup/noop-20261019-232440-start.json",
+          "bytes": 215,
+          "crc32": "54700626",
+          "sha256": "86c147aa99ca7eefb67f4bdc6d201a75f18a675dcb1027a2543f772cccda2c50"
+        },
+        {
+          "path": "power225-research-followup/noop-20261019-232559-after.txt",
+          "bytes": 2392,
+          "crc32": "a9d889a3",
+          "sha256": "dee54026e63ca89a42563867cb61bd77024cdfbbe40bdecda4811b2a35b3eb69"
+        },
+        {
+          "path": "power225-research-followup/noop-20261019-232559-before.txt",
+          "bytes": 2392,
+          "crc32": "b0cb809e",
+          "sha256": "9873ad8723a8df35538f3b0c8ba71035103f13c41de21635bd21e5cfcc5b6596"
+        },
+        {
+          "path": "power225-research-followup/noop-20261019-232559-result.json",
+          "bytes": 384,
+          "crc32": "502f1b8e",
+          "sha256": "b47adacad0ac8b7ac05bc489d9c0a92a0b2a1bdcc514873db7022c3232832932"
+        },
+        {
+          "path": "power225-research-followup/noop-20261019-232559-start.json",
+          "bytes": 241,
+          "crc32": "a34b8918",
+          "sha256": "711e89e71dfd2425be38d0938eb56ac5c763363674676d27cb89c9bf8e576a9f"
+        },
+        {
+          "path": "power225-research-followup/noop-20261019-234340-after.txt",
+          "bytes": 2392,
+          "crc32": "74e6d252",
+          "sha256": "d2e2b1d9482bbdaba7eb67776679e6cdfb0f7ba6c3c280ad523de88e9be0a1ec"
+        },
+        {
+          "path": "power225-research-followup/noop-20261019-234340-before.txt",
+          "bytes": 2392,
+          "crc32": "ffe50e65",
+          "sha256": "18d0fc99b09d07fe7fc470e41fcbebca8e525bc3c3e7f7e21ea900640423345f"
+        },
+        {
+          "path": "power225-research-followup/noop-20261019-234340-result.json",
+          "bytes": 384,
+          "crc32": "c7fecf51",
+          "sha256": "0b8ce489c28be84c08a793b78951702606d0b907f7d95c2caf464634b5188672"
+        },
+        {
+          "path": "power225-research-followup/noop-20261019-234340-start.json",
+          "bytes": 241,
+          "crc32": "d29db476",
+          "sha256": "72f64e954887ef59b3bb057ac617fc76189143bdbc0011aae42e9b166c8b16ad"
+        },
+        {
+          "path": "power225-research-followup/nvflash-signature.json",
+          "bytes": 860,
+          "crc32": "0f774b6c",
+          "sha256": "828ea29cc3ebb6f7bb98f0b2e10fb369840c655ee28435c03e5881916665ad6f"
+        },
+        {
+          "path": "power225-research-followup/nvidia-registry-before-max225-20261019-234340.reg",
+          "bytes": 3365172,
+          "crc32": "d75ffb0f",
+          "sha256": "e1dae34bea27376ae0a3588277159cfa564d56b9c2762e83216db6aae3a2fd8a"
+        },
+        {
+          "path": "power225-research-followup/original-G635LX.rom",
+          "bytes": 1961983,
+          "crc32": "64a6f9e4",
+          "sha256": "bad9d741f36eb49c1db02fbf86506b1899fe63bcbc02200f82813b71c2984488"
+        },
+        {
+          "path": "power225-research-followup/restore-stock-max.ps1",
+          "bytes": 1539,
+          "crc32": "7038d7de",
+          "sha256": "dddb8debdac30185ebee039be28fb004ec49990e2cb55a637cbc5262ba3731a7"
+        },
+        {
+          "path": "power225-research-followup/rom-bit-power-pointers.json",
+          "bytes": 8269,
+          "crc32": "8812a1d6",
+          "sha256": "a28f5f50a9a9ae075943cb283cc52e6f4753fd4d1de6de85865e0fe4b61e7823"
+        },
+        {
+          "path": "power225-research-followup/rom-independent-validation.json",
+          "bytes": 605,
+          "crc32": "8576d68b",
+          "sha256": "3f132ac722d35dc2330446d9c080282ea85930b540ca381741686cea50940b02"
+        },
+        {
+          "path": "power225-research-followup/rom-inspection.json",
+          "bytes": 6937,
+          "crc32": "4f9d898f",
+          "sha256": "49f56bd3ea2da6337f6546014b7078da29c718b27b45370bbf98d6b998c74447"
+        },
+        {
+          "path": "power225-research-followup/rom-provenance.json",
+          "bytes": 474,
+          "crc32": "7d01664f",
+          "sha256": "2734d7b0a1091024ec844ff9c4231897ed3d2a42c8ce40c78748c1f566382a16"
+        },
+        {
+          "path": "power225-research-followup/SHA256SUMS.json",
+          "bytes": 6130,
+          "crc32": "12e2bf97",
+          "sha256": "bb9486968f4c92052b1210d5113bf8691d13eaa4bff99ffb70880bb6b245893e"
+        },
+        {
+          "path": "power225-research-followup/source-download-manifest.json",
+          "bytes": 3760,
+          "crc32": "4920d74d",
+          "sha256": "656ff6fa723e095a030832116fd61206611666f4cd681fbc81a08c403ea649ca"
+        },
+        {
+          "path": "power225-research-followup/timmy-commit.json",
+          "bytes": 21992,
+          "crc32": "0c7b6b84",
+          "sha256": "468d89c43b87fc9f2e6c636eee725fbfebaf26dffe563af832a4f81ea4714444"
+        },
+        {
+          "path": "power225-research-followup/timmy-revision.json",
+          "bytes": 209,
+          "crc32": "adb54e01",
+          "sha256": "b495176e28f3456be320c937fe8efdf4ce6bd12249b1e6ec96ae0781294257c6"
+        },
+        {
+          "path": "power225-research-followup/timmy-tree.json",
+          "bytes": 281310,
+          "crc32": "d7b07507",
+          "sha256": "0d48724176a8769231481febdbae0d04d154b46d0ac74b23a34040789a267259"
+        }
+      ]
+    },
+    {
+      "path": "225W非官方方案核查证据清单.csv",
+      "bytes": 899,
+      "sha256": "06805ac7dd2ae1fc15fd48fc05ad7825d79f8ce06ed242c97d78c81fea4e7b7e"
+    },
+    {
+      "path": "GPU调校基线与操作记录.txt",
+      "bytes": 11207,
+      "sha256": "8070a14acfdb40f3bd9de6848c83fac425bf3f027179d657bf092fb317f14c75"
+    },
+    {
+      "path": "GPU超频测试证据.zip",
+      "bytes": 611373,
+      "sha256": "58b8f7e093c364416053dd20e49073d6910ad39ca09d0f0e8a3438851483f4f8",
+      "members": [
+        {
+          "path": "tuning/afterburner-idle-check.json",
+          "bytes": 1438,
+          "crc32": "1e5a2958",
+          "sha256": "633201096c4c0351d135f9ddc517ebd5f577d971ebf8745ef78ca562e5af4a9a"
+        },
+        {
+          "path": "tuning/baseline-benchmark-monitor-session.json",
+          "bytes": 169,
+          "crc32": "3b8d181b",
+          "sha256": "29d3ef42ccee7cae793be28c6ce0c042419fc2ebf6ed58aa7a69ab138986b26d"
+        },
+        {
+          "path": "tuning/baseline-benchmark-telemetry.csv",
+          "bytes": 115084,
+          "crc32": "29d23ea5",
+          "sha256": "9241570df18e0d4027a61b21874647d6939889f0fcbb24f8d36b502e550d726b"
+        },
+        {
+          "path": "tuning/baseline-result-1.png",
+          "bytes": 110870,
+          "crc32": "cce1628d",
+          "sha256": "037513d25209e6c9400cee038ccb5407c2f64b858c3074a69c93907b47aa8c81"
+        },
+        {
+          "path": "tuning/baseline-summary.json",
+          "bytes": 788,
+          "crc32": "d02d0942",
+          "sha256": "af3418f8fa2b9aecf6f31c40af610eadb1b8e5cf5e63953c65640f9d5c4ab22b"
+        },
+        {
+          "path": "tuning/baseline-telemetry.csv",
+          "bytes": 55570,
+          "crc32": "cd7f494e",
+          "sha256": "c3a8529030deeddf01b286bcc38a2e8254b6a54b623442e2854fcec882aca51d"
+        },
+        {
+          "path": "tuning/benchmark-settings.png",
+          "bytes": 109401,
+          "crc32": "de26f0a6",
+          "sha256": "e95964abe35480547a1df9d57ccd3933b6b7a44be0d7c598ae235303764ed44c"
+        },
+        {
+          "path": "tuning/Cyberpunk-UserSettings-after-test.json",
+          "bytes": 68805,
+          "crc32": "eb3ba535",
+          "sha256": "b7a71f8308d9d4ec66d110d826c10048750d469a08f229eacdb8a45d36f490a6"
+        },
+        {
+          "path": "tuning/Cyberpunk-UserSettings-before.json",
+          "bytes": 91709,
+          "crc32": "d683dc0a",
+          "sha256": "fde88e654a0ef4a58d308371cc68b0ac5bf759267beec2675d7c2f40f76e8c76"
+        },
+        {
+          "path": "tuning/Cyberpunk-UserSettings-benchmark.json",
+          "bytes": 68805,
+          "crc32": "eb3ba535",
+          "sha256": "b7a71f8308d9d4ec66d110d826c10048750d469a08f229eacdb8a45d36f490a6"
+        },
+        {
+          "path": "tuning/events-after.json",
+          "bytes": 4,
+          "crc32": "0c577d0f",
+          "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+        },
+        {
+          "path": "tuning/events-before.json",
+          "bytes": 4,
+          "crc32": "0c577d0f",
+          "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+        },
+        {
+          "path": "tuning/events-final.json",
+          "bytes": 4,
+          "crc32": "0c577d0f",
+          "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+        },
+        {
+          "path": "tuning/execution-status.json",
+          "bytes": 642,
+          "crc32": "c334a40c",
+          "sha256": "0d11431a254265f233784d6ff06b3c63b0bcab8586505e9d2d042462e979ed73"
+        },
+        {
+          "path": "tuning/final-control.json",
+          "bytes": 23760,
+          "crc32": "b50823ff",
+          "sha256": "479a9be13f1e5720a8a54bb3463a1b9df4fcf879656143b2c8fea370f2716b36"
+        },
+        {
+          "path": "tuning/final-state.json",
+          "bytes": 266,
+          "crc32": "e7ae999a",
+          "sha256": "182bcaf573b7002e02912220af3d29046d7bf45f186121426b8c78ee744ae543"
+        },
+        {
+          "path": "tuning/furmark-verification.json",
+          "bytes": 230,
+          "crc32": "00c3d549",
+          "sha256": "38d512e2103170dfa3073d64aa1404ab98d0aec0481696365543b9a8e01743e7"
+        },
+        {
+          "path": "tuning/game-settings-restoration.json",
+          "bytes": 155,
+          "crc32": "fa53879f",
+          "sha256": "aa7e32859f6973ae01d8c18856aa67d32f3d9f10440fd6dc5e5133a96a27e7cf"
+        },
+        {
+          "path": "tuning/gpu-oc-comparison.json",
+          "bytes": 573,
+          "crc32": "8fe1d5fb",
+          "sha256": "6788ad7b5a3e3868c901686eeeaef83636709880f6b648a1c78d1ca0bbc595eb"
+        },
+        {
+          "path": "tuning/gpu-oc-events-final.json",
+          "bytes": 4,
+          "crc32": "0c577d0f",
+          "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+        },
+        {
+          "path": "tuning/gpu-oc-final-control.json",
+          "bytes": 23755,
+          "crc32": "b8a434c6",
+          "sha256": "2f13db144d052d9180e3dc3acede098705f7cb6927c81de35cc498b2b1df6d92"
+        },
+        {
+          "path": "tuning/gpu-oc-final-status.json",
+          "bytes": 533,
+          "crc32": "65f65cb7",
+          "sha256": "4a81982963fe2d1c8f0f2f804b0e40e5995780e8fa792760e0ce7356676dd8e1"
+        },
+        {
+          "path": "tuning/installer-verification.json",
+          "bytes": 542,
+          "crc32": "af385307",
+          "sha256": "bb1a92810d0cb06dfe8a953d22695721fa276025864d3a63f46cc4a0f98d210b"
+        },
+        {
+          "path": "tuning/monitor-session.json",
+          "bytes": 169,
+          "crc32": "138096d2",
+          "sha256": "6bd8ec1a863a2a681588414e42399870a4b3b0acf90c52f2e8353ac3d791daec"
+        },
+        {
+          "path": "tuning/post-stop-idle.csv",
+          "bytes": 1003,
+          "crc32": "88029682",
+          "sha256": "48636007e9d220fd74ca6d01cd5c398a23dec3f8316bb13c6d1dde3c91f3e272"
+        },
+        {
+          "path": "tuning/restore-verification.json",
+          "bytes": 52909,
+          "crc32": "bb90fda7",
+          "sha256": "7c3382c342e8c833f70af1e61b064411b60b162f9bb35923f33c54c79d7c8f2d"
+        },
+        {
+          "path": "tuning/temporary-game-changes.json",
+          "bytes": 592,
+          "crc32": "1154c9e7",
+          "sha256": "920e44a204fb9ba195bd4926d8b5d0f5b9ae8b411b0dffc5d6774a80325c4b38"
+        },
+        {
+          "path": "tuning/afterburner-original/control-initial.json",
+          "bytes": 23755,
+          "crc32": "bd7cb502",
+          "sha256": "0782bd83ceba6ef995ae6dde6a1d53b0e996ddbcf2f4aecf93cbca8341d3f2f3"
+        },
+        {
+          "path": "tuning/afterburner-original/MACM-initial.bin",
+          "bytes": 8192,
+          "crc32": "37700e44",
+          "sha256": "ce626b020a6b498f593581dc0e9247d39634fb44d8bc338ca915c9ced1fe932f"
+        },
+        {
+          "path": "tuning/afterburner-original/root-MSIAfterburner.cfg",
+          "bytes": 7962,
+          "crc32": "5f5119be",
+          "sha256": "8fde2dd6f907f95b040aced82726e539ac13e15a6629f853e5c261578b08967b"
+        },
+        {
+          "path": "tuning/afterburner-original/sensors-initial.json",
+          "bytes": 14508,
+          "crc32": "6f7d9cca",
+          "sha256": "8896e502e2b26173b3baf9b4cd8c1f222bc56506f2c4c0650fc441e31ba778f6"
+        },
+        {
+          "path": "tuning/afterburner-original/Profiles/MSIAfterburner.cfg",
+          "bytes": 61,
+          "crc32": "83730531",
+          "sha256": "093c4ebe2a7d3d0b53c7bc843cff4871ca1b1a4a589f450bbcf4b9ae0161e680"
+        },
+        {
+          "path": "tuning/baseline-auto-1/analysis.json",
+          "bytes": 1452,
+          "crc32": "d53e65de",
+          "sha256": "75ee86a5e0f10e5e7253c782ad9de528a59fe4fd696db987915629db84e6b746"
+        },
+        {
+          "path": "tuning/baseline-auto-1/control-after.json",
+          "bytes": 23755,
+          "crc32": "1e4245f8",
+          "sha256": "77418cbcd5e96db1abd5deda76b4a5307073073c128c70ac6361bdac7f9071b9"
+        },
+        {
+          "path": "tuning/baseline-auto-1/control-before.json",
+          "bytes": 23755,
+          "crc32": "359b8db0",
+          "sha256": "0abd8f27144a3ce634aee3bf61ace456b66e9f793ebdc32c0c8f5d99c28a4767"
+        },
+        {
+          "path": "tuning/baseline-auto-1/session.json",
+          "bytes": 456,
+          "crc32": "dad3f92d",
+          "sha256": "644bde1f495808330977006ef7ff6076827dcd0c7c2e8897f0bfadb1f910f07f"
+        },
+        {
+          "path": "tuning/baseline-auto-1/standby-events.json",
+          "bytes": 944,
+          "crc32": "b4c1b5c1",
+          "sha256": "0eb28f298fb67e5421fdf96b119075eba67f13bf4f5f2b59389ff91306c450ca"
+        },
+        {
+          "path": "tuning/baseline-auto-1/telemetry.csv",
+          "bytes": 15643,
+          "crc32": "555605d7",
+          "sha256": "23ee0c9635c819cf9dd3a39958e562d9471f8b0601f734cfb3ffd83b5863d0ff"
+        },
+        {
+          "path": "tuning/baseline-auto-1/test-settings.json",
+          "bytes": 68806,
+          "crc32": "374e2775",
+          "sha256": "01ab5302257f26f1c9b19243b4f0571002a4de1b22852d427f9717d69cd0b3ce"
+        },
+        {
+          "path": "tuning/baseline-auto-1/result/frames.csv",
+          "bytes": 66563,
+          "crc32": "3c649142",
+          "sha256": "d2cf471530f4cea2ba3e8c882f82012d0265642ac26a5cb01f33cf82bf40be2b"
+        },
+        {
+          "path": "tuning/baseline-auto-1/result/summary.json",
+          "bytes": 2313,
+          "crc32": "b3dd8f75",
+          "sha256": "53312ee2f62957ec6358bc7b4081eea1f82644165dfc5a42c85fb2b468f499ae"
+        },
+        {
+          "path": "tuning/baseline-awake-1/control-after.json",
+          "bytes": 23760,
+          "crc32": "e14b80c0",
+          "sha256": "f3898aa78fab586aefbf2cd3e0b088d0391c1adb2952c9390f7d684877f911c1"
+        },
+        {
+          "path": "tuning/baseline-awake-1/control-before.json",
+          "bytes": 23755,
+          "crc32": "6ac47ed5",
+          "sha256": "121974e1325321c24672e3fbf595be32ddda7eb6adae1c374b3bce4f14922998"
+        },
+        {
+          "path": "tuning/baseline-awake-1/gpu-restore.json",
+          "bytes": 52914,
+          "crc32": "ec46b1b6",
+          "sha256": "0bfa4747063140f73628d55248669f624a7cfb2b9763179ed42bd1ee748f2190"
+        },
+        {
+          "path": "tuning/baseline-awake-1/latest-sample.json",
+          "bytes": 401,
+          "crc32": "1d348b02",
+          "sha256": "250fea7dfcfea80f20a42ee9e372fe6947e961ed4fb97520edb49d042c11c5a1"
+        },
+        {
+          "path": "tuning/baseline-awake-1/session.json",
+          "bytes": 349,
+          "crc32": "819d8553",
+          "sha256": "4ca1f9137c8f38243bead8761509a9ba28588f73fa69f2f057abdf07e648979a"
+        },
+        {
+          "path": "tuning/baseline-awake-1/telemetry.csv",
+          "bytes": 9980,
+          "crc32": "2462e1ac",
+          "sha256": "e43550d22be22a5d85ee4295b203f95aa4d593e815d7877756d4f0ab576da2c8"
+        },
+        {
+          "path": "tuning/baseline-awake-1/test-settings.json",
+          "bytes": 68806,
+          "crc32": "374e2775",
+          "sha256": "01ab5302257f26f1c9b19243b4f0571002a4de1b22852d427f9717d69cd0b3ce"
+        },
+        {
+          "path": "tuning/benchmark_2026-10-19_19-28-16/frames.csv",
+          "bytes": 75498,
+          "crc32": "d738b0d9",
+          "sha256": "2460b5baa30fe485c2e87a668929e8e2493558da0e2120e625c1316e0c3c1a92"
+        },
+        {
+          "path": "tuning/benchmark_2026-10-19_19-28-16/summary.json",
+          "bytes": 2313,
+          "crc32": "0ed6490c",
+          "sha256": "7af36c481fc256de78cf54d2674aae06f7d1cb70fee88cd6466f8ed2b5d06a1a"
+        },
+        {
+          "path": "tuning/furmark-baseline-1/_furmark_logfurmark-baseline-1.txt",
+          "bytes": 5458,
+          "crc32": "6c5e5042",
+          "sha256": "af318276c5635b2f2cd8eb43a38d715ca4cbe77187597379d6a8105af32ba1e3"
+        },
+        {
+          "path": "tuning/furmark-baseline-1/_scores_maxtime.csv",
+          "bytes": 317,
+          "crc32": "e34eff02",
+          "sha256": "c03db6ea0e107d20c8f56295eb484f85ce62f01a78db1fbc80d31aa26030ffa2"
+        },
+        {
+          "path": "tuning/furmark-baseline-1/_scores.csv",
+          "bytes": 663,
+          "crc32": "7c4d7af0",
+          "sha256": "8293f0f0c22aba84b8080ba124e5d22db8cd7b97b8e7983e65fbcc8d9b2bf44b"
+        },
+        {
+          "path": "tuning/furmark-baseline-1/analysis.json",
+          "bytes": 1321,
+          "crc32": "b702b225",
+          "sha256": "fb77ae34b07eb2bef5f4e7374923c14432dca40f45775e4e427a1687ad005f41"
+        },
+        {
+          "path": "tuning/furmark-baseline-1/arguments.json",
+          "bytes": 480,
+          "crc32": "e299a857",
+          "sha256": "01a9b77b19b3210f66ccdd9dd749723a73e5bb2c3ca658b9d9081c1e8699a5a6"
+        },
+        {
+          "path": "tuning/furmark-baseline-1/control-original.json",
+          "bytes": 23755,
+          "crc32": "fb5d2ed0",
+          "sha256": "cb3c2093eeeccfd8701658ae1b017cea6126d0186db9835e69c1fe4b1d301a97"
+        },
+        {
+          "path": "tuning/furmark-baseline-1/control-restored.json",
+          "bytes": 23755,
+          "crc32": "ab7dd774",
+          "sha256": "f24c56c3962b7e081329faba2d84164aa53bd4f3b0190ea5377f374d36e2e413"
+        },
+        {
+          "path": "tuning/furmark-baseline-1/control-test.json",
+          "bytes": 23755,
+          "crc32": "8cf7cb72",
+          "sha256": "832d38f2c151e5a1e87d6fbdeb9daa3390ae6620b6ce7e47e462973200f77b13"
+        },
+        {
+          "path": "tuning/furmark-baseline-1/furmark-gpu.csv",
+          "bytes": 16765,
+          "crc32": "216d3a32",
+          "sha256": "c00f66495b72a0ac3f7a65300c06285b04f17ce0ccd1cc0ef98f95e7d9cace43"
+        },
+        {
+          "path": "tuning/furmark-baseline-1/latest-sample.json",
+          "bytes": 379,
+          "crc32": "b99c8dfd",
+          "sha256": "c08cb709a56a0cd266c493180a972cc003de96b1465777a7ff399aaf9f13e08e"
+        },
+        {
+          "path": "tuning/furmark-baseline-1/restore-readback.json",
+          "bytes": 52909,
+          "crc32": "3c50407d",
+          "sha256": "34adb678ba2f22f395e0624b462a3293dbaf906c1eef328f97c5ecb80da7d22e"
+        },
+        {
+          "path": "tuning/furmark-baseline-1/scores.json",
+          "bytes": 466,
+          "crc32": "a6cb9d8d",
+          "sha256": "be649ab232b1b7ef5068bc9573576a525b215b32498e2db093d05ebd6dfe150a"
+        },
+        {
+          "path": "tuning/furmark-baseline-1/session.json",
+          "bytes": 305,
+          "crc32": "59170a74",
+          "sha256": "f50c5640d9c404807a282aa7345a4921e95be553378b9808a120394e793665e4"
+        },
+        {
+          "path": "tuning/furmark-baseline-1/stderr.txt",
+          "bytes": 0,
+          "crc32": "00000000",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "tuning/furmark-baseline-1/stdout.txt",
+          "bytes": 680,
+          "crc32": "b9c2ee7a",
+          "sha256": "2fa1f7089d5d39d63ffc33ad0196adf1ecb8a082f4adbd696ac251ee852eb57b"
+        },
+        {
+          "path": "tuning/furmark-baseline-1/telemetry.csv",
+          "bytes": 11020,
+          "crc32": "d3444138",
+          "sha256": "36ccacd784e2779e4de133b77fe87f3861925432355126f757353e6eddad9636"
+        },
+        {
+          "path": "tuning/furmark-baseline-2/_furmark_logfurmark-baseline-2.txt",
+          "bytes": 5458,
+          "crc32": "c961590e",
+          "sha256": "7f61971b0f969bfa5f87efdccfaf4ee6cee13e7f19642ae0f76c004918c2ee51"
+        },
+        {
+          "path": "tuning/furmark-baseline-2/_scores_maxtime.csv",
+          "bytes": 675,
+          "crc32": "c3c870f1",
+          "sha256": "e64ae38ba8f84665d1c4d250931a0cf23d2739f344642e056a5d27433bab98d6"
+        },
+        {
+          "path": "tuning/furmark-baseline-2/_scores.csv",
+          "bytes": 1027,
+          "crc32": "d471419e",
+          "sha256": "68b7315529f20ee2888bd1fbf97bc346db2ae61c816aed19d657cb4b0c299c81"
+        },
+        {
+          "path": "tuning/furmark-baseline-2/analysis.json",
+          "bytes": 1344,
+          "crc32": "2caee263",
+          "sha256": "f0d14325475f79b5e40f302923dc7c88196175f4ad9e83389404f8c462ea1468"
+        },
+        {
+          "path": "tuning/furmark-baseline-2/arguments.json",
+          "bytes": 480,
+          "crc32": "21d09766",
+          "sha256": "24fc37f8ca58c9bab787b43f79c8faecf160bfc007f8bc3ce3ee570c80977c2e"
+        },
+        {
+          "path": "tuning/furmark-baseline-2/control-original.json",
+          "bytes": 23755,
+          "crc32": "ea9e5b92",
+          "sha256": "00f957f4749e2775a6ea2af4b7dbe77480226fe69b64af45280694579ffc8577"
+        },
+        {
+          "path": "tuning/furmark-baseline-2/control-restored.json",
+          "bytes": 23755,
+          "crc32": "1fc3ac83",
+          "sha256": "cbd383a005229abe358408bf988a80dd553f6f03a9a6bd75844df0329122a267"
+        },
+        {
+          "path": "tuning/furmark-baseline-2/control-test.json",
+          "bytes": 23755,
+          "crc32": "2ee155f2",
+          "sha256": "4700bfac2a66d0686d76cae172dcc794564666b6188621310efb6f74a574f31b"
+        },
+        {
+          "path": "tuning/furmark-baseline-2/furmark-gpu.csv",
+          "bytes": 16492,
+          "crc32": "0a0bb157",
+          "sha256": "0e9d34e83b3d0ceead5331fdff66d29d0a4b81432bbbd9654f6c84fde1dbfb1b"
+        },
+        {
+          "path": "tuning/furmark-baseline-2/latest-sample.json",
+          "bytes": 377,
+          "crc32": "e2bfbfa7",
+          "sha256": "4f03453488a9d59e2a8af950597bc5b1d6b0ee5abf0b7a92abc745d49eeac069"
+        },
+        {
+          "path": "tuning/furmark-baseline-2/restore-readback.json",
+          "bytes": 52909,
+          "crc32": "db3853d7",
+          "sha256": "704da7d19d0a5070f714b6e33313c5f2a87ef27ec3b1d7eca310afda881374f7"
+        },
+        {
+          "path": "tuning/furmark-baseline-2/scene.jpg",
+          "bytes": 194997,
+          "crc32": "11163f72",
+          "sha256": "3e81e1512a63ebe5fcadfdc0e16ca03993e5cdccd2108e85bd71b74b8bb0c240"
+        },
+        {
+          "path": "tuning/furmark-baseline-2/scores.json",
+          "bytes": 466,
+          "crc32": "c82ee949",
+          "sha256": "e37dd0aa0557e88a9df4ed3483154d40491a5c9c3360202ccab7730568b1f3df"
+        },
+        {
+          "path": "tuning/furmark-baseline-2/session.json",
+          "bytes": 305,
+          "crc32": "0cc453f9",
+          "sha256": "abad3041bd8682342e307ba6c7ad8a4beebf521084714770663c2d4a9e5f6305"
+        },
+        {
+          "path": "tuning/furmark-baseline-2/stderr.txt",
+          "bytes": 0,
+          "crc32": "00000000",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "tuning/furmark-baseline-2/stdout.txt",
+          "bytes": 680,
+          "crc32": "ab546301",
+          "sha256": "2ac28be2f0fbb68a5e408627238d7bc669193d69e1680e34fe465a0fd0a35519"
+        },
+        {
+          "path": "tuning/furmark-baseline-2/telemetry.csv",
+          "bytes": 10875,
+          "crc32": "ea8a242a",
+          "sha256": "a7fd2848b79afe086a361a22df16bc9f1f07464774d8f3fb4d7c24024ccf925d"
+        },
+        {
+          "path": "tuning/furmark-baseline-3/_furmark_logfurmark-baseline-3.txt",
+          "bytes": 4355,
+          "crc32": "8a332a8d",
+          "sha256": "7555240a3c7583a5d322de375dc1761ed5d6dc6a80e7c7de8e276c525290f7b8"
+        },
+        {
+          "path": "tuning/furmark-baseline-3/arguments.json",
+          "bytes": 480,
+          "crc32": "60e87d89",
+          "sha256": "e9b9f35c1e2c3e441569a6b0f5b38e6b1b40725539aa20f944248ae5e754704a"
+        },
+        {
+          "path": "tuning/furmark-baseline-3/control-original.json",
+          "bytes": 23755,
+          "crc32": "d944946b",
+          "sha256": "c121e6ecf1b05719d225a37fbc7efd9e53f6d0d6a0d3861acdf5e02b7a963196"
+        },
+        {
+          "path": "tuning/furmark-baseline-3/control-restored.json",
+          "bytes": 23755,
+          "crc32": "2f3322ca",
+          "sha256": "1294f5df593894150fd67417b3848992af12e98894828cccd0b5aea38e90800e"
+        },
+        {
+          "path": "tuning/furmark-baseline-3/control-test.json",
+          "bytes": 23755,
+          "crc32": "4bcba513",
+          "sha256": "1c50b9ea151db360596f9827238e5a3bf3d6a505af688b63e72f9a927618591a"
+        },
+        {
+          "path": "tuning/furmark-baseline-3/furmark-gpu.csv",
+          "bytes": 4141,
+          "crc32": "0f5529b5",
+          "sha256": "a4153a71e37231efd3591acdbcd300742f5812427bfa891b220cef3af1d502ad"
+        },
+        {
+          "path": "tuning/furmark-baseline-3/latest-sample.json",
+          "bytes": 377,
+          "crc32": "3a0eeae3",
+          "sha256": "2d823ef988500ecb98563a4fe3ab4932eff051399056c2274372b27437a516d5"
+        },
+        {
+          "path": "tuning/furmark-baseline-3/restore-readback.json",
+          "bytes": 52909,
+          "crc32": "7e12d4cc",
+          "sha256": "08f69532617d5f05c93e28399564d70c775b9c33f34b608993e09a7b5e9b599e"
+        },
+        {
+          "path": "tuning/furmark-baseline-3/session.json",
+          "bytes": 310,
+          "crc32": "ffb77583",
+          "sha256": "65df97b1895193c8a8b41b2c284550dd9043c318c49d3ac31b33866c6935a9bc"
+        },
+        {
+          "path": "tuning/furmark-baseline-3/stderr.txt",
+          "bytes": 0,
+          "crc32": "00000000",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "tuning/furmark-baseline-3/stdout.txt",
+          "bytes": 0,
+          "crc32": "00000000",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "tuning/furmark-baseline-3/telemetry.csv",
+          "bytes": 4071,
+          "crc32": "f4c46113",
+          "sha256": "106e98343bf5ee8f3a71536d33013ef837e0638e751c6e0c8ffdf724d6b671a9"
+        },
+        {
+          "path": "tuning/furmark-core80-1/_furmark_logfurmark-core80-1.txt",
+          "bytes": 5454,
+          "crc32": "37aafb3b",
+          "sha256": "58aa563280d8721cd8cda5c29b5549e7b6a8c9d0fe5ef496aaa73d080a31eaba"
+        },
+        {
+          "path": "tuning/furmark-core80-1/_scores_maxtime.csv",
+          "bytes": 496,
+          "crc32": "13dcba0a",
+          "sha256": "666da94c5aa9bdccf158f67196ed7b30db4fd7079264dea23218135011150c6e"
+        },
+        {
+          "path": "tuning/furmark-core80-1/_scores.csv",
+          "bytes": 845,
+          "crc32": "8b8ddfe1",
+          "sha256": "6217d37ec7e6ecaef737a0b76abe5cad6e04d27fb4234c935fdd5953f02c1db9"
+        },
+        {
+          "path": "tuning/furmark-core80-1/analysis.json",
+          "bytes": 1333,
+          "crc32": "d4a87d36",
+          "sha256": "7e27330d9f11830af3f0b5221af466d22206672b040e02535547bcf05a8bd0b7"
+        },
+        {
+          "path": "tuning/furmark-core80-1/apply-readback.json",
+          "bytes": 52909,
+          "crc32": "691bbe3a",
+          "sha256": "8dfed7c1f8f7a40603d46bf3927d543892f19f3215b97b7ee69132de7b4c5bce"
+        },
+        {
+          "path": "tuning/furmark-core80-1/arguments.json",
+          "bytes": 476,
+          "crc32": "3b24ca67",
+          "sha256": "f1173a9625843793d2e2f1c22ff2f01ce015bb3d82080726ed1fa8ddfff53eec"
+        },
+        {
+          "path": "tuning/furmark-core80-1/control-original.json",
+          "bytes": 23755,
+          "crc32": "6f709c91",
+          "sha256": "7bc876497d9f1a696e4e4f073fd16c5bc64ea29aa2e721c8b4df743fbda8a288"
+        },
+        {
+          "path": "tuning/furmark-core80-1/control-restored.json",
+          "bytes": 23755,
+          "crc32": "84808f44",
+          "sha256": "abf340a1d4ecf450eccf31af2798867af5e2faf9b3d184c4fb736ebef37d2cbe"
+        },
+        {
+          "path": "tuning/furmark-core80-1/control-test.json",
+          "bytes": 23755,
+          "crc32": "3be95446",
+          "sha256": "48f5c2406fead3994085e4536591a5c13ad9cad7a5592fc0453f12bc4b1edebe"
+        },
+        {
+          "path": "tuning/furmark-core80-1/furmark-gpu.csv",
+          "bytes": 16488,
+          "crc32": "b602ab82",
+          "sha256": "26b59674f30fc0158fa26a158a90dfada7dc890a7638ae9ca102d83b6a90c969"
+        },
+        {
+          "path": "tuning/furmark-core80-1/latest-sample.json",
+          "bytes": 376,
+          "crc32": "68a0d8b5",
+          "sha256": "817ed921940599ec4cf81f75bfb51ce611ff84a53d9be7ef2b2ab3efe91478c2"
+        },
+        {
+          "path": "tuning/furmark-core80-1/restore-readback.json",
+          "bytes": 52909,
+          "crc32": "5a27d028",
+          "sha256": "4f26952e71cb9c65582c8332e956cb0114dfd67d893eb85ab5d0a37cae186940"
+        },
+        {
+          "path": "tuning/furmark-core80-1/scores.json",
+          "bytes": 466,
+          "crc32": "bf6910db",
+          "sha256": "b5ffd9f9ab10869bf645f8866429ddc35a7cb0151a8b4166fda83889b872ecef"
+        },
+        {
+          "path": "tuning/furmark-core80-1/session.json",
+          "bytes": 303,
+          "crc32": "a2ce9125",
+          "sha256": "a1ff07018eb6121c32c1ff90634595548cb35ab142d455009fbafba5967ea6f1"
+        },
+        {
+          "path": "tuning/furmark-core80-1/stderr.txt",
+          "bytes": 0,
+          "crc32": "00000000",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "tuning/furmark-core80-1/stdout.txt",
+          "bytes": 680,
+          "crc32": "f9cfebd4",
+          "sha256": "fc2522a5d5575a3f48d8409cb6d57a0c3c18de19f2a7da4678a3d1edc58c10d0"
+        },
+        {
+          "path": "tuning/furmark-core80-1/telemetry.csv",
+          "bytes": 10880,
+          "crc32": "93972a06",
+          "sha256": "ec5877ec4960ee19d1a193c70dcd0001be85fc8e5b977db87b1066b48665d982"
+        },
+        {
+          "path": "tuning/furmark-core80-2/_furmark_logfurmark-core80-2.txt",
+          "bytes": 5454,
+          "crc32": "108760c6",
+          "sha256": "3c9d06c4bd40b6d0b7642b5eb8078e6a310f71b67040516cf0cd890f900da999"
+        },
+        {
+          "path": "tuning/furmark-core80-2/_scores_maxtime.csv",
+          "bytes": 854,
+          "crc32": "9e4e729a",
+          "sha256": "54e6fb4b45e29142d2ac0290166398b226154b87a15353fb7037a7e48bb9dadd"
+        },
+        {
+          "path": "tuning/furmark-core80-2/_scores.csv",
+          "bytes": 1209,
+          "crc32": "0283ff78",
+          "sha256": "753d36fd7edb2093678347650a1895e4fc6680393b5cc1ceb7b81e8d8e810b2a"
+        },
+        {
+          "path": "tuning/furmark-core80-2/analysis.json",
+          "bytes": 1345,
+          "crc32": "55292954",
+          "sha256": "c7486d9e11b0e30b5d8d08d90ec03cfff77c38e7b5c19c35d4030a48845b2ddd"
+        },
+        {
+          "path": "tuning/furmark-core80-2/apply-readback.json",
+          "bytes": 52909,
+          "crc32": "79b01678",
+          "sha256": "e4afb814633c32f2e279a4e8aca30fe5236913cd360c8c64cfa88b9601c50b9d"
+        },
+        {
+          "path": "tuning/furmark-core80-2/arguments.json",
+          "bytes": 476,
+          "crc32": "23a02207",
+          "sha256": "42a913809dd07ce67481cd624215793a64b1f43fce2557685c25ac73f32379c0"
+        },
+        {
+          "path": "tuning/furmark-core80-2/control-original.json",
+          "bytes": 23755,
+          "crc32": "6229500c",
+          "sha256": "d629ef99540212f9dd689ce405b72f533613b3824d1d94c367c0f14292d65d15"
+        },
+        {
+          "path": "tuning/furmark-core80-2/control-restored.json",
+          "bytes": 23755,
+          "crc32": "7fb2095f",
+          "sha256": "2ce5c6beae47bde941c9f7f73376c515744f94aca106a58bdc4d138eeebbfe4c"
+        },
+        {
+          "path": "tuning/furmark-core80-2/control-test.json",
+          "bytes": 23755,
+          "crc32": "a3d71899",
+          "sha256": "1087ae92d1cbd5bb3f62156a4d6fa35d9deefd905862e69c54cc38225bd64000"
+        },
+        {
+          "path": "tuning/furmark-core80-2/furmark-gpu.csv",
+          "bytes": 16488,
+          "crc32": "fcf41e51",
+          "sha256": "45df45318d98dbdafab3c17c70aa15fa73aa2a469a16973bf56c257e77c1cfff"
+        },
+        {
+          "path": "tuning/furmark-core80-2/latest-sample.json",
+          "bytes": 377,
+          "crc32": "f4b61435",
+          "sha256": "1412b25256f1dd3ad1da9e8904ca2eaf5e285ec1ecf7d69e4d91e73021f41389"
+        },
+        {
+          "path": "tuning/furmark-core80-2/restore-readback.json",
+          "bytes": 52909,
+          "crc32": "20d6a808",
+          "sha256": "4e20d818946d67b2b669f06c14a7d854f5d91e2560dad37ade981a49d1f2aa0d"
+        },
+        {
+          "path": "tuning/furmark-core80-2/scores.json",
+          "bytes": 466,
+          "crc32": "ecdd54bf",
+          "sha256": "888cfbd60f7981835c23490548dba9b0cf14e2c2c1e3d0312c58a94ce16f0a45"
+        },
+        {
+          "path": "tuning/furmark-core80-2/session.json",
+          "bytes": 303,
+          "crc32": "75d95b9f",
+          "sha256": "37ee2a57a0d4615edda736c1b6da12e1ec0df5f8dcb467ee4ad5a72826fecb9a"
+        },
+        {
+          "path": "tuning/furmark-core80-2/stderr.txt",
+          "bytes": 0,
+          "crc32": "00000000",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "tuning/furmark-core80-2/stdout.txt",
+          "bytes": 680,
+          "crc32": "18d99c98",
+          "sha256": "485383eed8dc0d9dfc064ec6b5e5bf04a94a94cff9e325b43dd93bd139920aea"
+        },
+        {
+          "path": "tuning/furmark-core80-2/telemetry.csv",
+          "bytes": 10740,
+          "crc32": "284c8dff",
+          "sha256": "a359fe6983045fd4a5e6b67241a655e486462aa204a721f92f0246ad18ac0c94"
+        },
+        {
+          "path": "tuning/gpu-focus-baseline-1/control-after.json",
+          "bytes": 23755,
+          "crc32": "a00494c9",
+          "sha256": "73455336fa4b321d6bac7bf81dada5bbdfcf97208e9ab74ab250da9c90271248"
+        },
+        {
+          "path": "tuning/gpu-focus-baseline-1/control-before.json",
+          "bytes": 23760,
+          "crc32": "dfeac9fe",
+          "sha256": "9efa67006dbead01528c3c33de2eb9723eb1c1ff2ce4ff4d0ca2fee024dc3c09"
+        },
+        {
+          "path": "tuning/gpu-focus-baseline-1/gpu-restore.json",
+          "bytes": 52914,
+          "crc32": "326cbf72",
+          "sha256": "7589630ddc220126263155f0340cb75d952d7da0e472acd9259eb2c88504349d"
+        },
+        {
+          "path": "tuning/gpu-focus-baseline-1/latest-sample.json",
+          "bytes": 403,
+          "crc32": "64b2b6e6",
+          "sha256": "0828fc8aa9e805d0ff21b735ccc13bdb6b5bfa8309f5ee69a52c68509c0e383f"
+        },
+        {
+          "path": "tuning/gpu-focus-baseline-1/session.json",
+          "bytes": 351,
+          "crc32": "dffb15aa",
+          "sha256": "0162a9b4a4e4c445b9e427922c9cc73886202e7cb191dd7cf086d5ed6944cecd"
+        },
+        {
+          "path": "tuning/gpu-focus-baseline-1/telemetry.csv",
+          "bytes": 1361,
+          "crc32": "f8ae1c29",
+          "sha256": "2a97781c89629d4031e92a32a82051e633bb1f4e138a8794e4e4d05ae2103971"
+        },
+        {
+          "path": "tuning/gpu-focus-baseline-1/test-settings.json",
+          "bytes": 68804,
+          "crc32": "f9182249",
+          "sha256": "87ad3f2519eeee1141326c4ec91af6be5fc2e0d706b5ad0b7e22b5a58504fd3c"
+        },
+        {
+          "path": "ROG_G635LX_GPU超频测试结果.html",
+          "bytes": 10510,
+          "crc32": "92e87ff3",
+          "sha256": "d3d032ca411c557eff76517df344f1cf16257360685d1696953d5eb7e89e6234"
+        },
+        {
+          "path": "GPU超频测试结果.txt",
+          "bytes": 6965,
+          "crc32": "ae9b64c3",
+          "sha256": "5496de6d4fce6e0b9bd502855a7d38ef7eda54bbf847f4d70259775baeae82f3"
+        },
+        {
+          "path": "GPU超频测试证据清单.csv",
+          "bytes": 16036,
+          "crc32": "f4c490dc",
+          "sha256": "cb87381a0d76efc622dffb2ce097bfeaee74db51a07c2d18503477f96a860df2"
+        },
+        {
+          "path": "ROG_G635LX_调校执行报告.html",
+          "bytes": 15897,
+          "crc32": "485d6a61",
+          "sha256": "3d582da2fd321d7ad451f091075861e86c8125622ea81d50ac49ef20d9779b33"
+        }
+      ]
+    },
+    {
+      "path": "README_225W_整理说明.md",
+      "bytes": 1254,
+      "sha256": "b8bead6d517a9ccb6aabd5aeb80297f21a0317aad22c1b5f28bfcf73431f737a"
+    },
+    {
+      "path": "ROG_G635LX_225W复试结果.html",
+      "bytes": 8214,
+      "sha256": "ea81a7d4d026b849c5365f956ca3e104e35d8703759306ef8879d940c5be142f"
+    },
+    {
+      "path": "ROG_G635LX_GPU诊断报告.html",
+      "bytes": 251773,
+      "sha256": "016a4e246fe50d1ae8845fda98be4403ef36921c82afeb2bc5e5cdd2b0946d2e"
+    },
+    {
+      "path": "ROG_G635LX_调校执行报告.html",
+      "bytes": 15897,
+      "sha256": "3d582da2fd321d7ad451f091075861e86c8125622ea81d50ac49ef20d9779b33"
+    },
+    {
+      "path": "ROG_G635LX_调校证据.zip",
+      "bytes": 298428,
+      "sha256": "44a6038fff2e1dce31026b58c29f474aad0ab91602a32f1b74a7c6da6bb24356",
+      "members": [
+        {
+          "path": "tuning/afterburner-idle-check.json",
+          "bytes": 1438,
+          "crc32": "1e5a2958",
+          "sha256": "633201096c4c0351d135f9ddc517ebd5f577d971ebf8745ef78ca562e5af4a9a"
+        },
+        {
+          "path": "tuning/baseline-benchmark-monitor-session.json",
+          "bytes": 169,
+          "crc32": "3b8d181b",
+          "sha256": "29d3ef42ccee7cae793be28c6ce0c042419fc2ebf6ed58aa7a69ab138986b26d"
+        },
+        {
+          "path": "tuning/baseline-benchmark-telemetry.csv",
+          "bytes": 115084,
+          "crc32": "29d23ea5",
+          "sha256": "9241570df18e0d4027a61b21874647d6939889f0fcbb24f8d36b502e550d726b"
+        },
+        {
+          "path": "tuning/baseline-result-1.png",
+          "bytes": 110870,
+          "crc32": "cce1628d",
+          "sha256": "037513d25209e6c9400cee038ccb5407c2f64b858c3074a69c93907b47aa8c81"
+        },
+        {
+          "path": "tuning/baseline-summary.json",
+          "bytes": 788,
+          "crc32": "d02d0942",
+          "sha256": "af3418f8fa2b9aecf6f31c40af610eadb1b8e5cf5e63953c65640f9d5c4ab22b"
+        },
+        {
+          "path": "tuning/baseline-telemetry.csv",
+          "bytes": 55570,
+          "crc32": "cd7f494e",
+          "sha256": "c3a8529030deeddf01b286bcc38a2e8254b6a54b623442e2854fcec882aca51d"
+        },
+        {
+          "path": "tuning/benchmark-settings.png",
+          "bytes": 109401,
+          "crc32": "de26f0a6",
+          "sha256": "e95964abe35480547a1df9d57ccd3933b6b7a44be0d7c598ae235303764ed44c"
+        },
+        {
+          "path": "tuning/Cyberpunk-UserSettings-after-test.json",
+          "bytes": 68805,
+          "crc32": "eb3ba535",
+          "sha256": "b7a71f8308d9d4ec66d110d826c10048750d469a08f229eacdb8a45d36f490a6"
+        },
+        {
+          "path": "tuning/Cyberpunk-UserSettings-before.json",
+          "bytes": 91709,
+          "crc32": "d683dc0a",
+          "sha256": "fde88e654a0ef4a58d308371cc68b0ac5bf759267beec2675d7c2f40f76e8c76"
+        },
+        {
+          "path": "tuning/Cyberpunk-UserSettings-benchmark.json",
+          "bytes": 68805,
+          "crc32": "eb3ba535",
+          "sha256": "b7a71f8308d9d4ec66d110d826c10048750d469a08f229eacdb8a45d36f490a6"
+        },
+        {
+          "path": "tuning/events-after.json",
+          "bytes": 4,
+          "crc32": "0c577d0f",
+          "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+        },
+        {
+          "path": "tuning/events-before.json",
+          "bytes": 4,
+          "crc32": "0c577d0f",
+          "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+        },
+        {
+          "path": "tuning/events-final.json",
+          "bytes": 4,
+          "crc32": "0c577d0f",
+          "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f"
+        },
+        {
+          "path": "tuning/execution-status.json",
+          "bytes": 642,
+          "crc32": "c334a40c",
+          "sha256": "0d11431a254265f233784d6ff06b3c63b0bcab8586505e9d2d042462e979ed73"
+        },
+        {
+          "path": "tuning/final-control.json",
+          "bytes": 23760,
+          "crc32": "b50823ff",
+          "sha256": "479a9be13f1e5720a8a54bb3463a1b9df4fcf879656143b2c8fea370f2716b36"
+        },
+        {
+          "path": "tuning/final-state.json",
+          "bytes": 266,
+          "crc32": "e7ae999a",
+          "sha256": "182bcaf573b7002e02912220af3d29046d7bf45f186121426b8c78ee744ae543"
+        },
+        {
+          "path": "tuning/game-settings-restoration.json",
+          "bytes": 155,
+          "crc32": "fa53879f",
+          "sha256": "aa7e32859f6973ae01d8c18856aa67d32f3d9f10440fd6dc5e5133a96a27e7cf"
+        },
+        {
+          "path": "tuning/installer-verification.json",
+          "bytes": 542,
+          "crc32": "af385307",
+          "sha256": "bb1a92810d0cb06dfe8a953d22695721fa276025864d3a63f46cc4a0f98d210b"
+        },
+        {
+          "path": "tuning/monitor-session.json",
+          "bytes": 169,
+          "crc32": "138096d2",
+          "sha256": "6bd8ec1a863a2a681588414e42399870a4b3b0acf90c52f2e8353ac3d791daec"
+        },
+        {
+          "path": "tuning/post-stop-idle.csv",
+          "bytes": 1003,
+          "crc32": "88029682",
+          "sha256": "48636007e9d220fd74ca6d01cd5c398a23dec3f8316bb13c6d1dde3c91f3e272"
+        },
+        {
+          "path": "tuning/restore-verification.json",
+          "bytes": 52909,
+          "crc32": "bb90fda7",
+          "sha256": "7c3382c342e8c833f70af1e61b064411b60b162f9bb35923f33c54c79d7c8f2d"
+        },
+        {
+          "path": "tuning/temporary-game-changes.json",
+          "bytes": 592,
+          "crc32": "1154c9e7",
+          "sha256": "920e44a204fb9ba195bd4926d8b5d0f5b9ae8b411b0dffc5d6774a80325c4b38"
+        },
+        {
+          "path": "tuning/afterburner-original/control-initial.json",
+          "bytes": 23755,
+          "crc32": "bd7cb502",
+          "sha256": "0782bd83ceba6ef995ae6dde6a1d53b0e996ddbcf2f4aecf93cbca8341d3f2f3"
+        },
+        {
+          "path": "tuning/afterburner-original/MACM-initial.bin",
+          "bytes": 8192,
+          "crc32": "37700e44",
+          "sha256": "ce626b020a6b498f593581dc0e9247d39634fb44d8bc338ca915c9ced1fe932f"
+        },
+        {
+          "path": "tuning/afterburner-original/root-MSIAfterburner.cfg",
+          "bytes": 7962,
+          "crc32": "5f5119be",
+          "sha256": "8fde2dd6f907f95b040aced82726e539ac13e15a6629f853e5c261578b08967b"
+        },
+        {
+          "path": "tuning/afterburner-original/sensors-initial.json",
+          "bytes": 14508,
+          "crc32": "6f7d9cca",
+          "sha256": "8896e502e2b26173b3baf9b4cd8c1f222bc56506f2c4c0650fc441e31ba778f6"
+        },
+        {
+          "path": "tuning/afterburner-original/Profiles/MSIAfterburner.cfg",
+          "bytes": 61,
+          "crc32": "83730531",
+          "sha256": "093c4ebe2a7d3d0b53c7bc843cff4871ca1b1a4a589f450bbcf4b9ae0161e680"
+        },
+        {
+          "path": "tuning/baseline-auto-1/analysis.json",
+          "bytes": 1452,
+          "crc32": "d53e65de",
+          "sha256": "75ee86a5e0f10e5e7253c782ad9de528a59fe4fd696db987915629db84e6b746"
+        },
+        {
+          "path": "tuning/baseline-auto-1/control-after.json",
+          "bytes": 23755,
+          "crc32": "1e4245f8",
+          "sha256": "77418cbcd5e96db1abd5deda76b4a5307073073c128c70ac6361bdac7f9071b9"
+        },
+        {
+          "path": "tuning/baseline-auto-1/control-before.json",
+          "bytes": 23755,
+          "crc32": "359b8db0",
+          "sha256": "0abd8f27144a3ce634aee3bf61ace456b66e9f793ebdc32c0c8f5d99c28a4767"
+        },
+        {
+          "path": "tuning/baseline-auto-1/session.json",
+          "bytes": 456,
+          "crc32": "dad3f92d",
+          "sha256": "644bde1f495808330977006ef7ff6076827dcd0c7c2e8897f0bfadb1f910f07f"
+        },
+        {
+          "path": "tuning/baseline-auto-1/standby-events.json",
+          "bytes": 944,
+          "crc32": "b4c1b5c1",
+          "sha256": "0eb28f298fb67e5421fdf96b119075eba67f13bf4f5f2b59389ff91306c450ca"
+        },
+        {
+          "path": "tuning/baseline-auto-1/telemetry.csv",
+          "bytes": 15643,
+          "crc32": "555605d7",
+          "sha256": "23ee0c9635c819cf9dd3a39958e562d9471f8b0601f734cfb3ffd83b5863d0ff"
+        },
+        {
+          "path": "tuning/baseline-auto-1/test-settings.json",
+          "bytes": 68806,
+          "crc32": "374e2775",
+          "sha256": "01ab5302257f26f1c9b19243b4f0571002a4de1b22852d427f9717d69cd0b3ce"
+        },
+        {
+          "path": "tuning/baseline-auto-1/result/frames.csv",
+          "bytes": 66563,
+          "crc32": "3c649142",
+          "sha256": "d2cf471530f4cea2ba3e8c882f82012d0265642ac26a5cb01f33cf82bf40be2b"
+        },
+        {
+          "path": "tuning/baseline-auto-1/result/summary.json",
+          "bytes": 2313,
+          "crc32": "b3dd8f75",
+          "sha256": "53312ee2f62957ec6358bc7b4081eea1f82644165dfc5a42c85fb2b468f499ae"
+        },
+        {
+          "path": "tuning/baseline-awake-1/control-after.json",
+          "bytes": 23760,
+          "crc32": "e14b80c0",
+          "sha256": "f3898aa78fab586aefbf2cd3e0b088d0391c1adb2952c9390f7d684877f911c1"
+        },
+        {
+          "path": "tuning/baseline-awake-1/control-before.json",
+          "bytes": 23755,
+          "crc32": "6ac47ed5",
+          "sha256": "121974e1325321c24672e3fbf595be32ddda7eb6adae1c374b3bce4f14922998"
+        },
+        {
+          "path": "tuning/baseline-awake-1/gpu-restore.json",
+          "bytes": 52914,
+          "crc32": "ec46b1b6",
+          "sha256": "0bfa4747063140f73628d55248669f624a7cfb2b9763179ed42bd1ee748f2190"
+        },
+        {
+          "path": "tuning/baseline-awake-1/latest-sample.json",
+          "bytes": 401,
+          "crc32": "1d348b02",
+          "sha256": "250fea7dfcfea80f20a42ee9e372fe6947e961ed4fb97520edb49d042c11c5a1"
+        },
+        {
+          "path": "tuning/baseline-awake-1/session.json",
+          "bytes": 349,
+          "crc32": "819d8553",
+          "sha256": "4ca1f9137c8f38243bead8761509a9ba28588f73fa69f2f057abdf07e648979a"
+        },
+        {
+          "path": "tuning/baseline-awake-1/telemetry.csv",
+          "bytes": 9980,
+          "crc32": "2462e1ac",
+          "sha256": "e43550d22be22a5d85ee4295b203f95aa4d593e815d7877756d4f0ab576da2c8"
+        },
+        {
+          "path": "tuning/baseline-awake-1/test-settings.json",
+          "bytes": 68806,
+          "crc32": "374e2775",
+          "sha256": "01ab5302257f26f1c9b19243b4f0571002a4de1b22852d427f9717d69cd0b3ce"
+        },
+        {
+          "path": "tuning/benchmark_2026-10-19_19-28-16/frames.csv",
+          "bytes": 75498,
+          "crc32": "d738b0d9",
+          "sha256": "2460b5baa30fe485c2e87a668929e8e2493558da0e2120e625c1316e0c3c1a92"
+        },
+        {
+          "path": "tuning/benchmark_2026-10-19_19-28-16/summary.json",
+          "bytes": 2313,
+          "crc32": "0ed6490c",
+          "sha256": "7af36c481fc256de78cf54d2674aae06f7d1cb70fee88cd6466f8ed2b5d06a1a"
+        },
+        {
+          "path": "ROG_G635LX_调校执行报告.html",
+          "bytes": 15897,
+          "crc32": "485d6a61",
+          "sha256": "3d582da2fd321d7ad451f091075861e86c8125622ea81d50ac49ef20d9779b33"
+        },
+        {
+          "path": "GPU调校基线与操作记录.txt",
+          "bytes": 11282,
+          "crc32": "c6233722",
+          "sha256": "f54833cf0c3daa5ad69c3b42908e3c99847f8630cd2daa0de9b26c7cdb2d80d6"
+        },
+        {
+          "path": "ROG_G635LX_调校证据校验.csv",
+          "bytes": 5216,
+          "crc32": "1ddbe761",
+          "sha256": "1f1dbac1631f140a60f48577dda9aa1c37c008ad3ec75fb5a05a0139c486884f"
+        }
+      ]
+    }
+  ]
+}

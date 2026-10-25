@@ -1,0 +1,14 @@
+# Preserve historical evidence byte-for-byte on every platform.
+/*.html -text
+/*.txt -text
+/*.csv -text
+/*.zip -text
+
+# Keep maintained documentation and verification code consistent.
+*.md text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+
+# This Markdown file is also part of the preserved source snapshot.
+/README_225W_整理说明.md -text
