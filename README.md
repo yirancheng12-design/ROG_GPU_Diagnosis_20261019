@@ -2,9 +2,15 @@
 
 [![Verify reports and evidence](https://github.com/yirancheng12-design/ROG_GPU_Diagnosis_20261019/actions/workflows/verify.yml/badge.svg?branch=main)](https://github.com/yirancheng12-design/ROG_GPU_Diagnosis_20261019/actions/workflows/verify.yml)
 
+[English](README.md) · [简体中文](README.zh-CN.md)
+
 **Understand GPU power drops, separate configured limits from measured performance, and inspect the evidence yourself.** Start with three short guides, then explore the original reports and data.
 
 The first case is an **ASUS ROG Strix SCAR 16 G635LX / RTX 5090 Laptop GPU**, recorded on **October 19, 2026 (UTC+8)**. Findings describe that machine and test session; the read-only analysis workflow can be reused with other recorded telemetry.
+
+![Recorded GPU limit and measured draw during standby and wake; individual samples, not a continuous-load result](assets/telemetry-preview.png)
+
+The preview uses the original 107-sample CSV. [Source and chart provenance](assets/preview-provenance.json) are included.
 
 ## What are you trying to understand?
 
@@ -23,6 +29,20 @@ The first case is an **ASUS ROG Strix SCAR 16 G635LX / RTX 5090 Laptop GPU**, re
 ## Try the read-only analysis
 
 Clone/download the repository. With Python 3.11+, run from its root:
+
+```console
+python tools/demo.py
+```
+
+The demo prints a compact summary directly from the preserved archive:
+
+```text
+Samples: 107 over 98.627 seconds
+First limit segment: 55 W across 57 samples
+Recorded limit range: 55–175 W
+```
+
+For all metric statistics and recorded limit segments:
 
 ```console
 python tools/summarize_telemetry.py --zip "ROG_G635LX_调校证据.zip" --member "tuning/baseline-auto-1/telemetry.csv"
@@ -50,6 +70,10 @@ python -m unittest discover -s tests -v
 The standard-library verifier checks **10 preserved original files and 228 ZIP members**, CSV inventories, maintained documentation links, and generated reference coverage. Windows/Linux CI runs the checks. Integrity checks do not establish sensor accuracy or hardware safety.
 
 Have another laptop or a reproducible case? [Submit a measurement](https://github.com/yirancheng12-design/ROG_GPU_Diagnosis_20261019/issues/new?template=measurement.yml), including conditions, data, exclusions, and unknowns. See [Contributing](CONTRIBUTING.md) for evidence and translation rules. No completed matched 175W/225W performance comparison is published here.
+
+If this workflow helps you, consider starring the repository so you can find it again. Useful bug reports, corrections, and comparable measurements are equally welcome.
+
+Maintainers can use the [sharing drafts](docs/en/share-kit.md), [growth-observation log](docs/en/growth-playbook.md), [draft release checklist](docs/en/release-notes.md), and [change log](CHANGELOG.md). These files do not publish a post or release automatically.
 
 ## Preserved Chinese sources
 

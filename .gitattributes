@@ -12,3 +12,7 @@
 
 # This Markdown file is also part of the preserved source snapshot.
 /README_225W_整理说明.md -text
+
+# Generated preview hashes describe exact asset bytes.
+/assets/*.svg -text
+/assets/*.png binary
