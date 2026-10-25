@@ -1,58 +1,58 @@
-# ROG G635LX GPU Diagnosis
+# Laptop GPU Power & Stability Diagnostics
 
-An evidence archive documenting GPU power limits, stability observations, and tuning attempts on an ASUS ROG Strix SCAR 16 G635LX with an RTX 5090 Laptop GPU.
+[![Verify reports and evidence](https://github.com/yirancheng12-design/ROG_GPU_Diagnosis_20261019/actions/workflows/verify.yml/badge.svg?branch=main)](https://github.com/yirancheng12-design/ROG_GPU_Diagnosis_20261019/actions/workflows/verify.yml)
 
-**Recorded on October 19, 2026.** All test times use Asia/Shanghai (UTC+8). These are historical measurements from one machine, not a statement about its current state or a tuning profile for other laptops.
+**Understand GPU power drops, separate configured limits from measured performance, and inspect the evidence yourself.** Start with three short guides, then explore the original reports and data.
 
-## Start here
+The first case is an **ASUS ROG Strix SCAR 16 G635LX / RTX 5090 Laptop GPU**, recorded on **October 19, 2026 (UTC+8)**. Findings describe that machine and test session; the read-only analysis workflow can be reused with other recorded telemetry.
 
-| English document | Contents |
-| --- | --- |
-| [GPU diagnosis](docs/en/gpu-diagnosis.md) | Hardware, the recorded 175W limit, telemetry, stability events, and testing methodology |
-| [Tuning and baseline report](docs/en/tuning-report.md) | Cyberpunk 2077 runs, standby interference, CPU temperature stops, and restoration checks |
-| [225W retest and chronology](docs/en/power-225w-retest.md) | Failed driver/API attempts, the later registry experiment, and missing follow-up evidence |
-| [Evidence guide](docs/en/evidence-guide.md) | Downloads, archive contents, CSV interpretation, and evidence limitations |
-| [Evidence coverage](docs/en/evidence-coverage.md) | Generated audit of references in the original HTML reports |
-| [Contributing](CONTRIBUTING.md) | How to add evidence, update translations, and run checks |
+## What are you trying to understand?
 
-## What the records establish
+| Question | Start here | What you get |
+| --- | --- | --- |
+| Why did the GPU limit drop to 55W? | [55W and Modern Standby](docs/en/case-55w.md) | Event timeline, invalid-run explanation, and a command to inspect the recorded CSV |
+| Did the 225W experiment actually work? | [175W vs. 225W: what the logs prove](docs/en/case-225w.md) | Request vs. read-back vs. load-testing evidence, including the missing follow-up |
+| How can I document my own problem? | [Reproducible diagnostic workflow](docs/en/diagnostic-workflow.md) | Checklist, blank CSV template, read-only analyzer, and a contribution format |
 
-- The initial diagnosis recorded a **175W** current and maximum GPU power limit, consistent with the specification cited in that report: **150W + 25W Dynamic Boost**.
-- The initial passive trace contains **85 samples**. It is not a sustained-load benchmark.
-- A Cyberpunk baseline was affected by Modern Standby and a **55W** limit. A subsequent awake run stopped after a **104°C** CPU reading; no completed tuned Cyberpunk A/B result was obtained in that phase.
-- The early 225W retest failed to load its experimental driver (Windows error **577**). A later standard NVIDIA API request also left the read-back limit at **175W**.
-- A packaged **23:43** record documents a registry override write, with live current/maximum limits still at **175W**, a restart required, and no stress test started.
-- The retest HTML contains an appended claim that a later restart enabled a 225W driver limit, followed by a CPU-temperature stop at a 175W baseline. Its linked follow-up report is absent. Treat that as an **unverified later report**, not evidence of sustained 225W or a completed restoration.
+## Three findings to take away
 
-There is no demonstrated stable 225W performance result in the published evidence. A configuration target, a successful registry write, an exit code of zero, and measured sustained power are different outcomes.
+- **55W coincided with standby.** The next sample after wake returned to 172.52W, then approached 175W. That supports standby involvement in this case, not a universal cause of low GPU power.
+- **The awake run still failed its CPU-temperature guard.** It reached 104°C and did not finish; it cannot be used as a successful tuned benchmark.
+- **A 225W target was not a stable 225W result.** The packaged pre-restart write left both live limits at 175W. The original HTML's later banner links to a missing report, so its later claims remain unverified here.
 
-## Repository layout
+## Try the read-only analysis
 
-```text
-README.md                  English entry point
-docs/en/                   Edited English editions and evidence guide
-evidence/manifest.json     Original-file hashes and ZIP member inventory
-tools/verify_repository.py  Read-only integrity and documentation checks
-tests/                     Verifier regression tests
-.github/workflows/         Automated verification
-*.html, *.txt, *.csv, *.zip Original Chinese reports and evidence, unchanged
+Clone/download the repository. With Python 3.11+, run from its root:
+
+```console
+python tools/summarize_telemetry.py --zip "ROG_G635LX_调校证据.zip" --member "tuning/baseline-auto-1/telemetry.csv"
 ```
 
-The English editions translate and reorganize the readable reports. Original filenames, CSV path fields, binary data, screenshots, and logs are retained as evidence identifiers. Text embedded in historical screenshots and raw machine output is not relabeled or translated. Read the [translation policy](CONTRIBUTING.md) for the source mapping and treatment of later annotations.
+This prints sample statistics and recorded limit segments directly from the archive. It does not query the GPU, change settings, execute archived scripts, or require administrator access. Power draw and power limit stay separate; no FPS improvement or stability conclusion is inferred. For your data, use the [CSV template and column guide](docs/en/diagnostic-workflow.md).
 
-## Verify the archive
+## Go deeper
 
-Python 3.11 or newer is sufficient; no third-party packages or GPU tools are required. From the repository root:
+| Document | Contents |
+| --- | --- |
+| [Full GPU diagnosis](docs/en/gpu-diagnosis.md) | Hardware, initial 175W limit, 85 passive samples, stability events, and methodology |
+| [Full tuning and baseline report](docs/en/tuning-report.md) | Cyberpunk runs, excluded results, temperature stops, and restoration checks |
+| [Detailed 225W chronology](docs/en/power-225w-retest.md) | Driver/API failures, later registry experiment, and evidence boundaries |
+| [Evidence guide and downloads](docs/en/evidence-guide.md) | Three ZIPs, original CSVs, raw-data identifiers, and package limitations |
+| [Reference coverage](docs/en/evidence-coverage.md) | Which historical links resolve to archive members and which are unpublished |
+
+## Verify and contribute
 
 ```console
 python tools/verify_repository.py
 python -m unittest discover -s tests -v
 ```
 
-The verifier checks original-file SHA-256 values, ZIP CRCs and member inventory, local links in maintained Markdown, and the generated evidence-coverage report. It reads archives without extracting or executing their contents. It makes no hardware changes and does not establish the truth of a sensor reading or the completeness of a historical experiment.
+The standard-library verifier checks **10 preserved original files and 228 ZIP members**, CSV inventories, maintained documentation links, and generated reference coverage. Windows/Linux CI runs the checks. Integrity checks do not establish sensor accuracy or hardware safety.
 
-## Original Chinese material
+Have another laptop or a reproducible case? [Submit a measurement](https://github.com/yirancheng12-design/ROG_GPU_Diagnosis_20261019/issues/new?template=measurement.yml), including conditions, data, exclusions, and unknowns. See [Contributing](CONTRIBUTING.md) for evidence and translation rules. No completed matched 175W/225W performance comparison is published here.
 
-The [original overview](README_225W_整理说明.md), [diagnosis](ROG_G635LX_GPU诊断报告.html), [tuning report](ROG_G635LX_调校执行报告.html), [baseline log](GPU调校基线与操作记录.txt), and [225W retest](ROG_G635LX_225W复试结果.html) are preserved byte for byte. Download HTML files to view their original layouts; GitHub normally displays their source.
+## Preserved Chinese sources
 
-This repository documents past experiments. It does not provide a validated over-spec power profile or instructions to run the scripts, registry exports, or ROM files inside the evidence packages. The original records describe no firmware flashing, but they do describe software changes, an experimental driver-load attempt, and a later registry override. The blanket phrase "software only" should not be read as "nothing changed" or "all changes were proven reversible."
+The [original overview](README_225W_整理说明.md), [diagnosis](ROG_G635LX_GPU诊断报告.html), [tuning report](ROG_G635LX_调校执行报告.html), [baseline log](GPU调校基线与操作记录.txt), and [retest](ROG_G635LX_225W复试结果.html) remain unchanged. English editions reorganize the readable narratives; raw logs, filenames, screenshots, and archive contents retain their original identifiers and language. Download original HTML files to view their layouts.
+
+This is a diagnostic evidence project, not a validated over-spec tuning profile. The historical record includes real software/configuration changes; their archived scripts and backups are evidence, not instructions for another laptop.
