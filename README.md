@@ -56,3 +56,7 @@ Have another laptop or a reproducible case? [Submit a measurement](https://githu
 The [original overview](README_225W_整理说明.md), [diagnosis](ROG_G635LX_GPU诊断报告.html), [tuning report](ROG_G635LX_调校执行报告.html), [baseline log](GPU调校基线与操作记录.txt), and [retest](ROG_G635LX_225W复试结果.html) remain unchanged. English editions reorganize the readable narratives; raw logs, filenames, screenshots, and archive contents retain their original identifiers and language. Download original HTML files to view their layouts.
 
 This is a diagnostic evidence project, not a validated over-spec tuning profile. The historical record includes real software/configuration changes; their archived scripts and backups are evidence, not instructions for another laptop.
+
+## License
+
+Original code and documentation in this repository are licensed under the [MIT License](LICENSE). Third-party software, firmware, screenshots, and other third-party material in the evidence archives retain their respective rights and licenses; they are not relicensed by this notice.
