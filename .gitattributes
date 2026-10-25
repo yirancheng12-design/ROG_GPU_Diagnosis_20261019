@@ -16,3 +16,7 @@
 # Generated preview hashes describe exact asset bytes.
 /assets/*.svg -text
 /assets/*.png binary
+/Install*.cmd text eol=crlf
+/Run.cmd text eol=crlf
+/tools/install.py text eol=lf
+/tests/test_installer.py text eol=lf
