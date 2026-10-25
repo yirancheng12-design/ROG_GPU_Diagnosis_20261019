@@ -12,7 +12,7 @@ I maintain a small open-source laptop GPU diagnosis project. In one G635LX / RTX
 
 The repository contains the original evidence, a short case study, and a Python standard-library analyzer that reads the CSV directly from a ZIP. It separates measured draw from the effective power limit and makes no automatic root-cause or FPS-gain claim.
 
-Case and reproduction command: [55W case](https://github.com/yirancheng12-design/ROG_GPU_Diagnosis_20261019/blob/main/docs/en/case-55w.md).
+Case and reproduction command: [55W case](https://github.com/yirancheng12-design/laptop-gpu-diagnostics/blob/main/docs/en/case-55w.md).
 
 Has anyone recorded a comparable standby/wake power-limit transition on another laptop? Timestamped samples and the active OEM profile would be useful comparisons.
 
@@ -24,7 +24,7 @@ Has anyone recorded a comparable standby/wake power-limit transition on another 
 
 项目提供原始证据、时间线和只读 Python 分析工具，可以区分实际耗电与驱动功耗上限，不会自动修改电脑设置。
 
-[查看中文入口与复现方法](https://github.com/yirancheng12-design/ROG_GPU_Diagnosis_20261019/blob/main/README.zh-CN.md)。如果有其他机型的类似记录，欢迎补充环境、时间戳和数据，帮助判断哪些现象可以重复。
+[查看中文入口与复现方法](https://github.com/yirancheng12-design/laptop-gpu-diagnostics/blob/main/README.zh-CN.md)。如果有其他机型的类似记录，欢迎补充环境、时间戳和数据，帮助判断哪些现象可以重复。
 
 ## Short link caption
 
